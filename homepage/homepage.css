@@ -41,183 +41,145 @@
 }
 
 
-/*k*/
-
-.container {
-    width: 1500px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding-right: ;
-    
-}
-
-.container .card {
-    position: relative;
-    border-radius: 10px;
-    padding: 40px;
-    
-}
-
-ul.ba {
-    list-style-type: none;
-    font-size: 20px;
-    padding: 0;
-}
-li#topic {
-    font-weight: bold;
-}
-
-/* unvisited link */
-#a1:link {
-    color: green;
-    text-decoration: none;
-  }
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 40%;
+  padding: 0 10px;
+  padding-left: 20px;
+  margin-left: auto ;
+  margin-right: auto ;
+  text-align: center
   
-  /* visited link */
-  #a1:visited {
-    color: green;
-    text-decoration: none;
-  }
   
-  /* mouse over link */
-  #a1:hover {
-    color: red;
-    text-decoration: none;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
-  
-  /* selected link */
-  #a1:active {
-    color: blue;
-    text-decoration: none;
-  }
-
-
-.container .card .face {
-    width: 300px;
-    height: 200px;
-    transition: 0.5s;
 }
 
-.container .card .face.face1 {
-    position: relative;
-    background:black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(100px);
+/* Style the counter cards */
+.card {
+  box-shadow:0 0 20px  rgba(0,0,0,0.8);
+  padding: 16px;
+  text-align: center;
+  background-color: #292929;
+  height: 250px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.05s;
+  width: 98%;
+  line-weight:bold;
+ 
 }
-
-.container .card:hover .face.face1{
-    background: rgb(43, 38, 38);
-    transform: translateY(0px);
-    color: black;
+.card1  {
+  background-image: url("e.jpg"); 
 }
-
-.container .card .face.face1 .content {
-    opacity: 1;
-    transition: 0.5s;
-}
-
-.container .card:hover .face.face1 .content {
-    opacity: 1;
-   
+.card2  {
+  background-image: url("e2.jpg");
 }
 
 
 
-.container .card .face.face2 {
-    position: relative;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
-    transform: translateY(-100px);
-}
-
-.container .card:hover .face.face2{
-    transform: translateY(0);
-}
-
-
-
-.container .card .face.face2 .content h3 {
-    margin: 0 0 10px 0;
-    padding: 0;
-    color: #fff;
-    font-size: 24px;
-    text-align: center;
-    color: #414141;
+@keyframes fadeInAnimation { 
+  0% { 
+      opacity: 0; 
+  } 
+  100% { 
+      opacity: 1; 
+  } 
 } 
 
-.container a {
-    text-decoration: none;
-    color: #414141;
+.card:hover {
+  box-shadow:0 10 25px  rgba(0,0,0,0.8);
+  background-color: black;
+  transform: scale(1.05);
+  
+}
+
+#smallbox {
+  cursor: pointer;
 }
 
 .footer {
-    background-color:black;
-    padding: 10px;
-    
-    
-  }
+  background-color:black;
+  padding: 10px;
+  
+  
+}
 
-  @media screen and (max-width: 600px) {
-    .container {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-      padding-right: 20px;
-    }
-  }
-
+@media screen and (max-width: 600px) {
   .column {
-    float: left;
-    padding: 10px;
-    color: white;
-    text-align: left;
-    padding-left: 50px;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    
   }
-  
-  
-  .column.side {
-    width: 25%;
-    text-align: left;
-  }
-  
-  
-  @media screen and (max-width: 600px) {
-    .column.side{
-      width: 100%;
-    }
-  }
+}
 
-  ul.bb {
-    list-style-type: none;
-    padding: 0;
+.column {
+  float: left;
+  padding: 10px;
+  color: white;
+  text-align: left;
+  padding-left: 50px;
+}
+
+
+.column.side {
+  width: 25%;
+  text-align: left;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column.side{
+    width: 100%;
+  }
+}
+
+ul.bb {
+  list-style-type: none;
+  padding: 0;
+  color: white;
 }
 .button  {
-    background-color:green; /* Green */
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .button1 {border-radius: 28px;}
+  background-color:green; /* Green */
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
 
-  .button1:hover {
-    background-color: red;
-  }
-/*k*/
-  
+.button1 {border-radius: 28px;}
+
+.button1:hover {
+  background-color: red;
+}
+
+.fa {
+  font-size:18px;
+  color:green;
+}

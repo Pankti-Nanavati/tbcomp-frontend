@@ -22,6 +22,9 @@
         crossorigin="anonymous">
       
   
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        
  
 </head>
 <body>
@@ -57,106 +60,77 @@
           <a class="dropdown-item" href="#">Admin</a>
         </div>
       </li>
-
             </ul>
         </div>
     
     </nav>
   </div>
 
+  <script>
+    AOS.init();
+  </script>
 
-
-</div>
-
-<div class="container">
-  <div class="card">
-      <div class="face face1">
-          <div class="content">
-             
-                  <h2 style="color:white">BSE</h2>
-              
-          </div>
-      </div>
-      <div class="face face2">
-          <div class="content">
-              <ul class="ba">
-                  <li id="topic"><a href="#" id="a1"><span class="glyphicon glyphicon-file"></span>Topic 1</a></li>
-                  <li id="topic"><a href="#" id="a1"><span class="glyphicon glyphicon-file"></span>Topic 2</a></li>
-                  <li id="topic"><a href="#" id="a1"><span class="glyphicon glyphicon-file"></span>Topic 3</a></li>
-                  <li id="topic"><a href="#" id="a1"><span class="glyphicon glyphicon-file"></span>Topic 4</a></li>
-                  <li id="topic"> <a href="#" id="a1"><span class="glyphicon glyphicon-file"></span>Topic 5</a></li>
-                </ul>
-          </div>
-      </div>
-  </div>
-  
-  <div class="card">
-      <div class="face face1">
-          <div class="content">
-              
-              <h2 style="color:white">EEEE</h2>
-             
-          </div>
-      </div>
-      <div class="face face2">
-          <div class="content">
-              
-              <ul class="ba
-              ">
-                  <li id="topic"><a href="#" id="a1"><span class="glyphicon glyphicon-file"></span>Topic 1</a></li>
-                  <li id="topic"><a href="#" id="a1"><span class="glyphicon glyphicon-file"></span>Topic 2</a></li>
-                  <li id="topic"><a href="#" id="a1"><span class="glyphicon glyphicon-file"></span>Topic 3</a></li>
-                  <li id="topic"><a href="#" id="a1"><span class="glyphicon glyphicon-file"></span>Topic 4</a></li>
-                  <li id="topic"><a href="#" id="a1"><span class="glyphicon glyphicon-file"></span>Topic 5</a></li>
-                </ul>
-
-          </div>
-      </div>
-  </div>
-</div>
-
-<div class="footer" >
- 
   <div class="row">
-      <div class="column side">
-        <h2>Name</h2>
-        <p>Description</p>
+    <div class="column">
+      <div class="card card1" onclick="location.href='#';" id="smallbox"  data-aos="zoom-in">
+        <h3>BSE</h3>
       </div>
-      
-      <div class="column side">
-        <h2>Useful links</h2>
-        <br>
-        <ul class="bb">
-            <li><a href="#" id="a1" ><span class="glyphicon glyphicon-chevron-right" ></span>Home</a></li>
-            <br>
-            <li><a href="#" id="a1"><span class="glyphicon glyphicon-chevron-right"></span>Contact</a></li>
-            <br>
-            <li><a href="#" id="a1"><span class="glyphicon glyphicon-chevron-right"></span>Login</a></li>
-        </ul>
-      </div>
-
-        
-      <div class="column side">
-        <h2>Contact Us</h2>
-        <br>
-        <p><span class="glyphicon glyphicon-home" style="color: green"></span> K.J. Somaiya College of Engineering</p>
-        <p> Vidyanagar, Vidyavihar</p>
-        <p>Mumbai, India </p>
-        <br>
-        <p><span class="glyphicon glyphicon-envelope" style="color: green"></span> Email</p>
-      </div>
-
-        
-      
-      
-      <div class="column side" >
-        <h2>Resgister for free</h2>
-            <br>
-            <br>
-          <button class="button button1"><a href="#"></a>Sign Up!</button>
-      </div>
-  </div>
     </div>
+  
+    <div class="column">
+      <div class="card card2" onclick="location.href='#';" id="smallbox" data-aos="zoom-in">
+        <h3 id>EEEE</h3>
+      <a href="#"></a>
+      </div>
+    </div>
+    
+    
+  </div>
+  <br>
+  
+  <div class="footer" >
  
+    <div class="row">
+        <div class="column side">
+         <h2> Register for free</h2>
+         <br>
+          <button class="button button1"><a href="#"></a>Sign Up!</button>
+        </div>
+        
+        <div class="column side">
+          <h2>Useful links</h2>
+          <br>
+          <ul class="bb">
+              <li><a href="#"  class="fa fa-home" ></a> Home</li>
+              <br>
+              <li><a href="#" class="fa fa-phone" ></a> Contact</li>
+              <br>
+              <li><a href="#" class="fa fa-sign-in"></a> Login</li>
+          </ul>
+        </div>
+  
+          
+        <div class="column side">
+          <h2>Contact Us</h2>
+          <br>
+          <p><a class="fa fa-map-marker" style="font-size:20px;color:green"></a> K.J. Somaiya College of Engineering"</p>
+          <p> Vidyanagar, Vidyavihar</p>
+          <p>Mumbai, India </p>
+          <br>
+          <p><a class="fa fa-envelope" style="font-size:18px;color:green"></a> Email</p>
+        </div>
+  
+          
+        
+        
+        <div class="column side" >
+          <h2>Counter</h2>
+              <br>
+              <br>
+            
+        </div>
+    </div>
+      </div>
+   
 </body>
 </html>
