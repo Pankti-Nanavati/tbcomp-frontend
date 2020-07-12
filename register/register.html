@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Bootstrap Elegant Sign Up Form with Icons</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script type="text/javascript" src="main.js"></script>
+
+</head>
+<body>
+
+	<form id="regForm" action="" name="RegisterForm"> 
+		<h4 class="title">Register</h4>
+		<div class="hint-text text-center text-muted">Create your account. It's free and only takes a minute.</div>
+		<!-- One "tab" for each step in the form: -->
+		<div class="tab">
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+					  <input  class="form-control" placeholder="Email" name="emailId" onchange="return EmailValid()">
+				</div>
+			</div>
+				<small id="emailAlert" class="form-text"></small>
+			
+		</div>
+		<div class="tab2">
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-add-on"><i class="fa fa-lock"></i></span>
+					<input  class="form-control" placeholder="Password" name="password" type="password">
+				</div>
+				
+			</div>
+			<div class="form-group">
+				<div class="input-group">
+						<span class="input-group-add-on">
+							<i class="fa fa-lock"></i>
+							<i class="fa fa-check"></i>
+						</span>
+						<input  class="form-control" placeholder="Confirm Password" name="confirmPassword" type="password" onchange="return PassValid()">
+				</div>
+				<small id="confPasswordAlert" class="form-text"></small>
+			</div>
+		</div>
+		<div class="tab">
+			<div class="form-group">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="fa fa-university"></i></span>
+					 <input type="text"  class="form-control" placeholder="Name of College/University" name="collegeName" onchange="return CollegeValid()">
+				</div>
+				<div class="form-group">
+					<small id="collegeNameAlert" class="form-text"></small>
+				</div>
+			</div>
+			<div class="form-group">		
+				  <select class="form-control" id="yearOfStudy">
+					  <option selected>Year Of Study</option>
+					  <option>First Year</option>
+					  <option>Second Year</option>
+					  <option>Third Year</option>
+					  <option>Last Year</option>
+				  </select>
+			</div>
+		</div>
+		<div style="overflow:auto;">
+		  <div style="float:right;">
+			<button type="button" >Save</button>
+			<button type="submit" onclick="ShowSecurityQues()">Next</button>
+		  </div>
+		</div>
+	  </form>
+	  
+	  <form id="SecurityForm" action="" name="SecurityForm" onsubmit="return QuestionValidation()">
+		<h4 class="title">Security Questions</h4>
+        <!-- One "tab" for each step in the form: -->
+        <div class="form-row" >
+            <div class="alert alert-primary" role="alert" id="alert-message">
+                Make sure you remember your respones
+            </div>
+            <div class="alert alert-danger" role="alert" id="security-error-alert-message">
+                You must answer to atleast two Security questions
+            </div>
+        </div>
+		<div class="security-section">
+			<div class="form-group" id="question1">
+                <label for="question2" id="firstQuestionLabel">What is your favorite Food?</label><br>
+				<div class="input-group">
+					<div class="form-row"><input type="text" class="form-control" name="question1" id="firstQuestion" placeholder="Your Response" ></div>
+				</div>
+			</div>
+			<div class="form-group" id="question2">
+                <label for="question2" id="secondQuestionLabel">What is your favorite Sport?</label><br>
+				<div class="input-group">
+					
+					<div class="form-row"><input type="text" class="form-control" name="question2" id="secondQuestion" placeholder="Your Response"></div>
+				</div>
+			</div>
+			<div class="form-group" id="question3">
+                <label for="question3" id="thirdQuestionLabel">What is your favorite Song?</label><br>
+				<div class="input-group">
+					<div class="form-row"><input type="text" class="form-control" name="question3" id="thirdQuestion" placeholder="Your Response"></div>
+				</div>
+			</div>
+		</div>
+		<div style="overflow:auto;">
+		  <div style="float:right;">
+			<button type="button" id="prevBtn" onclick="GotoRegisterForm()">Previous</button>
+			<button type="submit" id="nextBtn" >Register</button>
+		  </div>
+		</div>
+	  </form>
+
+	  
+	  
+
+
+
+
+	  <script>
+		
+	 
+	  
+	  
+	  </script>
+	   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
