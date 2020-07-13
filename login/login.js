@@ -26,26 +26,24 @@ function loginValidation(){
 }
 
 function nameValidation(){
+    var email=document.forms["forgetPasswordForm"]["emailId"].value;
+    var email_patt=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   
-    var user_name = document.forms["forgetPasswordForm"]["userName"].value;
-    var userPattern = /^[a-zA-Z]+$/;
-
     var q1 = document.forms["forgetPasswordForm"]["question1"].value;
     var q2 = document.forms["forgetPasswordForm"]["question2"].value;
     var q3 = document.forms["forgetPasswordForm"]["question3"].value;
-    console.log(q1);
-    console.log(q2);
-    console.log(q3);
-    if((userPattern.test(user_name)==false))
-    {
-                document.getElementById('userNameAlert').innerHTML=" **Username must be in aphabets only";
-                return false;
-    }
-    else
-    {
-        document.getElementById('userNameAlert').innerHTML = '';
-        document.getElementById('userNameAlert').style.display = 'none';
-    }
+  
+      if(email_patt.test(email) == false )
+      
+          {
+              document.getElementById('emailAlert2').innerHTML=" **Please enter valid Email"
+              return false;
+          }
+      else{
+          document.getElementById('emailAlert2').innerHTML = '';
+          document.getElementById('emailAlert2').style.display = 'none';
+      }
+   
     var alertMessage = document.getElementById('alert-message');
     var ErrorAlertMessage = document.getElementById('error-alert-message');
     var BlankAlertMessage = document.getElementById('blank-alert-message');
@@ -62,6 +60,7 @@ function nameValidation(){
         ErrorAlertMessage.style.display = "block";
         alertMessage.style.display = "none";
         BlankAlertMessage.style.display = "none";
+        console.log('In here -2')
         return false;
 
     }
@@ -74,12 +73,15 @@ function nameValidation(){
 
 
     }
-    else if (q1 != "" && q2 != "" || q2 != "" && q3 != "" || q1 != "" && q3 != "")
+    else if (q1 != "" && q2 != "" && q3=="" || q1 ==""  && q2 != "" && q3 != "" || q1 != "" && q2== "" && q3 != "")
     {
-        window.location.href="ResetPassword.html",true;
-        console.log('Yes over here');
+        var loginForm = document.getElementById('main-login-form-section');
+        loginForm.style.display = "none";
+        window.location.assign("ResetPassword.html");
+        
         
     } 
+    return false
 }
 function ResetPassword(){
     var loginForm = document.getElementById('main-login-form-section');

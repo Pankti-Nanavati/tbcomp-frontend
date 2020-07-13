@@ -7,13 +7,13 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
-<link rel="stylesheet" type="text/css" href="styles.css">
-<script type="text/javascript" src="main.js"></script>
+<link rel="stylesheet" type="text/css" href="register.css">
+<script type="text/javascript" src="register.js"></script>
 
 </head>
 <body>
 
-	<form id="regForm" action="" name="RegisterForm"> 
+	<form id="regForm" action="" name="RegisterForm" onsubmit="return RegisterValidation()"> 
 		<h4 class="title">Register</h4>
 		<div class="hint-text text-center text-muted">Create your account. It's free and only takes a minute.</div>
 		<!-- One "tab" for each step in the form: -->
@@ -21,7 +21,7 @@
 			<div class="form-group">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-					  <input  class="form-control" placeholder="Email" name="emailId" onchange="return EmailValid()">
+					  <input  type="email "class="form-control" placeholder="Email" name="emailId" required>
 				</div>
 			</div>
 				<small id="emailAlert" class="form-text"></small>
@@ -31,7 +31,7 @@
 			<div class="form-group">
 				<div class="input-group">
 					<span class="input-group-add-on"><i class="fa fa-lock"></i></span>
-					<input  class="form-control" placeholder="Password" name="password" type="password">
+					<input  type="password"class="form-control" placeholder="Password" name="password" type="password" required>
 				</div>
 				
 			</div>
@@ -41,7 +41,7 @@
 							<i class="fa fa-lock"></i>
 							<i class="fa fa-check"></i>
 						</span>
-						<input  class="form-control" placeholder="Confirm Password" name="confirmPassword" type="password" onchange="return PassValid()">
+						<input type="password" class="form-control" placeholder="Confirm Password" name="confirmPassword" required>
 				</div>
 				<small id="confPasswordAlert" class="form-text"></small>
 			</div>
@@ -50,7 +50,7 @@
 			<div class="form-group">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="fa fa-university"></i></span>
-					 <input type="text"  class="form-control" placeholder="Name of College/University" name="collegeName" onchange="return CollegeValid()">
+					 <input type="text"  class="form-control" placeholder="Name of College/University" name="collegeName" required>
 				</div>
 				<div class="form-group">
 					<small id="collegeNameAlert" class="form-text"></small>
@@ -66,27 +66,21 @@
 				  </select>
 			</div>
 		</div>
-		<div style="overflow:auto;">
-		  <div style="float:right;">
-			<button type="button" >Save</button>
-			<button type="submit" onclick="ShowSecurityQues()">Next</button>
-		  </div>
-		</div>
-	  </form>
-	  
-	  <form id="SecurityForm" action="" name="SecurityForm" onsubmit="return QuestionValidation()">
 		<h4 class="title">Security Questions</h4>
         <!-- One "tab" for each step in the form: -->
-        <div class="form-row" >
+        <div class="form-row ">
             <div class="alert alert-primary" role="alert" id="alert-message">
                 Make sure you remember your respones
             </div>
-            <div class="alert alert-danger" role="alert" id="security-error-alert-message">
-                You must answer to atleast two Security questions
-            </div>
+            <div class="alert alert-danger text-center" role="alert" id="security-error-alert-message">
+                You must answer to two Security questions
+			</div>
+			<div class="alert alert-danger" role="alert" id="blank-alert-message">
+				Please fill out Security Questions.
+			</div>
         </div>
 		<div class="security-section">
-			<div class="form-group" id="question1">
+			<div class="form-group " id="question1">
                 <label for="question2" id="firstQuestionLabel">What is your favorite Food?</label><br>
 				<div class="input-group">
 					<div class="form-row"><input type="text" class="form-control" name="question1" id="firstQuestion" placeholder="Your Response" ></div>
@@ -107,9 +101,10 @@
 			</div>
 		</div>
 		<div style="overflow:auto;">
-		  <div style="float:right;">
-			<button type="button" id="prevBtn" onclick="GotoRegisterForm()">Previous</button>
-			<button type="submit" id="nextBtn" >Register</button>
+		  <div style="">
+			<button type="reset" class="btn btn-secondary btn-lg">Reset</button>
+			<button type="submit" class="btn btn-success btn-lg">Register</button>
+		
 		  </div>
 		</div>
 	  </form>

@@ -23,7 +23,7 @@
                     <h4 class="title">Login</h4>
                 </div>
                 <div class="main-form-body ">
-                    <form name="loginForm" action="" method="" onsubmit="return loginValidation()">
+                    <form name="loginForm" onsubmit="return loginValidation()">
                         <div class="form-group">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
@@ -58,19 +58,19 @@
                     <h4 class="title">Forgot Password</h4>
                 </div><br>
                 <div class="main-forgot-pass-body">
-                    <form name="forgetPasswordForm" action="" method="" onsubmit="return nameValidation()">
+                    <form name="forgetPasswordForm"  onsubmit="return nameValidation()">
                         <div class="form-group">
                             <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                <input type="text" class="form-control" name="userName" placeholder="Username" required>
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                <input type="email" class="form-control" name="emailId" placeholder="Email" required>
                             </div>
                                 <div class="form-group">
-                                    <small id="userNameAlert" class="form-text"></small>
+                                    <small id="emailAlert2" class="form-text"></small>
                                 </div>
                         </div>
                         <div class="form-row" >
                             <div class="alert alert-primary" role="alert" id="alert-message">
-                                Alert 
+                                Answer thode question, which you chose while creating Account.
                             </div>
                             <div class="alert alert-danger" role="alert" id="error-alert-message">
                                 You must answer two Security questions
