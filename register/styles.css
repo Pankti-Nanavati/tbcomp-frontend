@@ -239,11 +239,10 @@ body {
   input {
 	padding: 10px;
 	/*width: 100%;*/
-	
 	font-family: Raleway;
-  
   }
   
+
   /* Mark input boxes that gets an error on validation: */
   
   
