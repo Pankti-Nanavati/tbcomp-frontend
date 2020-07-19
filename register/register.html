@@ -56,19 +56,23 @@
 					<small id="collegeNameAlert" class="form-text"></small>
 				</div>
 			</div>
-			<div class="form-group">		
-				  <select class="form-control" id="yearOfStudy">
-					  <option selected>Year Of Study</option>
-					  <option>First Year</option>
-					  <option>Second Year</option>
-					  <option>Third Year</option>
-					  <option>Last Year</option>
-				  </select>
+			<div class="form-group">
+				<label for="yearOfStudy">
+					<span class="input-group-grad-cap">
+						<i class="fa fa-graduation-cap"></i>
+					</span>
+				</label>	
+				<select class="year-select md-form" id="yearOfStudy" name="yearOfStudy" type="text">
+					<option value="none" selected disabled hidden>Year Of Study</option>
+					<option value="FY">FY</option>
+					<option value="SY">SY</option>
+					<option value="TY">TY</option>
+					<option value="LY">LY</option>
+				</select>
 			</div>
 		</div>
 		<h4 class="title">Security Questions</h4>
-        <!-- One "tab" for each step in the form: -->
-        <div class="form-row ">
+        <div class="form-row">
             <div class="alert alert-primary" role="alert" id="alert-message">
                 Make sure you remember your respones
             </div>
@@ -76,11 +80,11 @@
                 You must answer to two Security questions
 			</div>
 			<div class="alert alert-danger" role="alert" id="blank-alert-message">
-				Please fill out Security Questions.
+				Please fill out Security Questions
 			</div>
         </div>
-		<div class="security-section">
-			<div class="form-group " id="question1">
+		<div class="security-section text-center">
+			<div class="form-group" id="question1">
                 <label for="question2" id="firstQuestionLabel">What is your favorite Food?</label><br>
 				<div class="input-group">
 					<div class="form-row"><input type="text" class="form-control" name="question1" id="firstQuestion" placeholder="Your Response" ></div>
@@ -89,7 +93,6 @@
 			<div class="form-group" id="question2">
                 <label for="question2" id="secondQuestionLabel">What is your favorite Sport?</label><br>
 				<div class="input-group">
-					
 					<div class="form-row"><input type="text" class="form-control" name="question2" id="secondQuestion" placeholder="Your Response"></div>
 				</div>
 			</div>
@@ -100,14 +103,15 @@
 				</div>
 			</div>
 		</div>
-		<div style="overflow:auto;">
-		  <div>
-			<button type="reset" class="btn btn-secondary btn-lg">Reset</button>
-			<button type="submit" class="btn btn-success btn-lg">Register</button>
-		
-		  </div>
+		<div class="form-row">
+			<div class="col-md-6">
+				<button type="reset" class="btn btn-secondary btn-lg btn-block">Reset</button>
+			</div>
+			<div class="col-md-6">
+				<button type="submit" class="btn btn-success btn-lg btn-block">Register</button>
+			</div>
 		</div>
-		<div class="footer text-center">Have already an Account? <a href="..\login\login.html">Login Here</a></div>
+		<div class="footer text-center">Already have an Account? <a href="..\login\login.html">Login Here</a></div>
 	  </form>
 	 
 
