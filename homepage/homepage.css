@@ -1,4 +1,10 @@
+html,body
+{
+    overflow-x: hidden; 
+}
+
 /*navbar*/
+
 .navbar-nav > li{
   padding-left:30px;
   padding-right: 30px;
@@ -321,21 +327,21 @@ ul.bb {
 .main-timeline .timeline:nth-child(4n+2) .timeline-content:before,
 .main-timeline .timeline:nth-child(4n+2) .timeline-content:after,
 .main-timeline .timeline:nth-child(4n+2) .timeline-icon{
-    background: linear-gradient(to bottom,#ff6348 49%,#ff7f50 50%);
+    background: linear-gradient(to bottom,#259390 49%,#46AEAF 50%);
 }
-.main-timeline .timeline:nth-child(4n+2) .title{ color: #ff6348; }
+.main-timeline .timeline:nth-child(4n+2) .title{ color: #259390; } 
 .main-timeline .timeline:nth-child(4n+3) .timeline-content:before,
 .main-timeline .timeline:nth-child(4n+3) .timeline-content:after,
 .main-timeline .timeline:nth-child(4n+3) .timeline-icon{
-    background: linear-gradient(to bottom,#259390 49%,#46AEAF 50%);
+    background: linear-gradient(to bottom,#2E687C 49%,#3E7B97 50%);
 }
-.main-timeline .timeline:nth-child(4n+3) .title{ color: #259390; }
+.main-timeline .timeline:nth-child(4n+3) .title{ color: #2E687C; }
 .main-timeline .timeline:nth-child(4n+4) .timeline-content:before,
 .main-timeline .timeline:nth-child(4n+4) .timeline-content:after,
 .main-timeline .timeline:nth-child(4n+4) .timeline-icon{
-    background: linear-gradient(to bottom,#CC3254 49%,#E33A59 50%);
+    background: linear-gradient(to bottom,#259390 49%,#46AEAF 50%);
 }
-.main-timeline .timeline:nth-child(4n+4) .title{ color: #CC3254; }
+.main-timeline .timeline:nth-child(4n+4) .title{ color: #259390; } 
 @media screen and (max-width:767px){
     .main-timeline .timeline,
     .main-timeline .timeline:nth-child(even){
@@ -377,28 +383,6 @@ ul.bb {
 {
     opacity:0.5;
 }
-.timelinehead{
-  padding-top: 2em;
-  padding-bottom: 1.5em;
-  text-align: center;
-}
-/*.timelinehead {
-text-align:center;
-display: grid;
-grid-template-columns: 200px max-content 200px;
-grid-template-rows: 20px 0;
-grid-gap: 20px;
-align-items:center;
-justify-content:center;
-}
-
-.timelinehead:after,.timelinehead:before {
-content: " ";
-display: block;
-border-top: 1px solid #aaa;
-border-bottom: 1px solid #aaa;
-height:3px;
-}*/
 
 .timelinehead {
 text-align:center;
@@ -407,12 +391,15 @@ grid-template-columns: 200px max-content 200px;
 grid-template-rows: 20px 0;
 grid-gap: 20px;
 justify-content:center;
+padding-top: 2em;
+padding-bottom: 1.5em;
 }
 
 .timelinehead:after,.timelinehead:before {
 content: " ";
 display: block;
-border-bottom: 3px solid #a6a6a6;
+border-bottom: 1.5px solid #a6a6a6;
+
 }
 /*timeline ends*/
 
