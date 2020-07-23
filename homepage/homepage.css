@@ -156,8 +156,7 @@
 .footer {
   background-color:black;
   padding: 10px;
-  
-  
+  width: auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -179,7 +178,7 @@
 
 
 .column .side {
-  width: 25%;
+ 
   text-align: left;
 }
 .column .side .bb .a:hover{
@@ -187,11 +186,7 @@
 }
 
 
-@media screen and (max-width: 600px) {
-  .column.side{
-    width: 100%;
-  }
-}
+
 
 ul.bb {
   list-style-type: none;
@@ -215,6 +210,10 @@ ul.bb {
 .button1 {border-radius: 28px;}
 
 .button1:hover {
+  background-color: red;
+}
+.button1:active {
+  outline:none; 
   background-color: red;
 }
 
