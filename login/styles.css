@@ -124,6 +124,7 @@ body {
 }
 /* Forgot Password Form Section Ends*/
 
+/* Reset Passowrd Form Section Starts*/
 .form-control, .form-control:focus, .input-group-addon {
 	border-color: #e1e1e1;
 	border-radius: 0;
@@ -202,6 +203,29 @@ body {
 	font-size: 7px;
 	position: absolute;
 }
+#confPasswordAlert{
+	color:red;
+}
 #emailAlert2{
 	color:red;
 }
+.reset-button{
+	margin: 5px;  
+	padding: 3.5px 25px ;
+	font-size: 20px;
+	
+  }
+  .submit-button{
+	margin:5px;
+	padding: 4px 14px;
+	font-size: 20px;
+  }
+ 
+
+  @media screen and (min-width: 603px) {
+	.button-center-align{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	  }
+}	
