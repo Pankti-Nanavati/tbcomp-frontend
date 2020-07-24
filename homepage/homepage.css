@@ -14,8 +14,8 @@ body, html {
 
 /*Landing image*/
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img1.jpg");
-  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image.jpg");
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -29,6 +29,12 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  font-size: larger;
+  font-weight: 100;
+  padding: 10px;
+}
+.hero-image .hero-text
+{background: rgba(0, 0, 0,0.6);
 }
 
 .hero-text #button2 {
@@ -40,6 +46,7 @@ body, html {
   background-color: #1e90ff ;
   text-align: center;
   cursor: pointer;
+  
 }
 
 .hero-text #button2:hover {
@@ -47,9 +54,10 @@ body, html {
   color: white;
 }
 p.two {
-  border-style: solid;
+ 
   border-width: medium;
   padding: 20px;
+  font-size: large;
 }
 
 /*landing image*/
@@ -155,15 +163,26 @@ p.two {
   overflow: hidden;
   top: 0;
   left: 0;
-  padding: 20px;
+  padding: 10px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px 10px 10px 10px;
+  
 }
 
-
-
+#sub1 {
+  text-align: center;
+  padding-top: 38px;
+}
+#sub2 {
+  text-align: center;
+  padding-top: 32px;
+}
+#sub3 {
+  text-align: center;
+  padding-top: 45px;
+}
 .hovereffect img {
   display: block;
   position: relative;
@@ -182,8 +201,7 @@ p.two {
   font-size: 17px;
   transition: all 0.4s ease-in-out;
   font-weight:bold;
-  font-size: xx-large;
- margin-bottom: 10px;
+  font-size: x-large;
  margin-top: 35px;
 }
 .row1 {
@@ -216,8 +234,9 @@ p.two {
 
 .footer {
   background-color:black;
-  padding: 10px;
   width: auto;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 @media screen and (max-width: 600px) {
@@ -231,15 +250,13 @@ p.two {
 
 .column {
   float: left;
-  padding: 10px;
   color: white;
   text-align: left;
-  padding-left: 50px;
+ 
 }
 
 
 .column .side {
- 
   text-align: left;
 }
 .column .side .bb .a:hover{
@@ -255,7 +272,7 @@ ul.bb {
   color: white;
 }
 .button  {
-  background-color:green; /* Green */
+  background-color:#1e90ff; 
   border: none;
   color: white;
   padding: 15px;
@@ -271,11 +288,11 @@ ul.bb {
 .button1 {border-radius: 28px;}
 
 .button1:hover {
-  background-color: red;
+  background-color: green;
 }
 .button1:active {
   outline:none; 
-  background-color: red;
+  background-color: green;
 }
 
 .column .fa {
