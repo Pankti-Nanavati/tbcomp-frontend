@@ -8,7 +8,7 @@ html,body
 .navbar-nav > li{
   padding-left:30px;
   padding-right: 30px;
-  font-size: 1.3em;
+  font-size: 1.1em;
    
 }
 .navbar-brand{
@@ -23,7 +23,7 @@ html,body
 }
 
 .navbar-brand{
-  font-size: 1.9em;
+  font-size: 1.6em;
 }
 
 .ml-auto .nav-link{
@@ -37,7 +37,7 @@ html,body
 
 .nav-link:hover {
   background-color:#1a1a1a;
-  font-size: 27px;
+  font-size: 19px;
 }
 .active .nav-link {
   border-bottom: 0.4px solid white;
