@@ -1,9 +1,10 @@
 body {
 	font-family: 'Varela Round', sans-serif;
-	background-image: url('backgroundimg.png');
+	/* background-image: url('backgroundimg.png'); */
 	background-repeat: no-repeat;	
 	background-attachment: fixed;
 	background-size: cover;
+	background-color: #eaeaed;
 }
 html,body
 {
@@ -13,6 +14,8 @@ html,body
 /*navbar*/
 #main-login-form-section{
 	padding-top: 150px;
+	
+	
 }
 .navbar-nav > li{
   padding-left:30px;
@@ -71,6 +74,7 @@ html,body
 .login {
 	width: 350px;
 }
+
 .login .content {
 	padding: 20px;
 	border-radius: 25px;
@@ -87,10 +91,12 @@ html,body
 	color: #999;
 	border-radius: 1px;
 	margin-bottom: 15px;
-	background: #fff;
-	border: 1px solid #f3f3f3;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	background-color: #ffffff;
+	/* border: 1px solid #f3f3f3; */
 	padding: 25px;
+	-webkit-box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99); 
+	box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99);
+	border-radius: 1%;
 }
 .form-group {
 	margin-bottom: 20px;

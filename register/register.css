@@ -17,8 +17,9 @@ html,body
 }
 
 .navbar{
-    background-color: transparent;
-    box-shadow: 0px 1px 50px #999;
+    /* background-color: transparent; */
+	box-shadow: 0px 1px 50px #999;
+	background-color: black;
 }
 
 .navbar-brand{
@@ -63,8 +64,8 @@ html,body
 
 /* Register Form starts*/
 body {
-    background-color: #f1f1f1;
-    background-image: url('backgroundimg.png');
+    background-color: #eaeaed;
+   /*  background-image: url('backgroundimg.png'); */
 	background-repeat: no-repeat;	
 	background-attachment: fixed;
 	background-size: cover;
@@ -77,7 +78,12 @@ body {
 	padding: 40px;
 	width: 50%;
 	min-width: 300px;
-  }
+	-webkit-box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99); 
+box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99);
+	border-radius: 1%;
+	/* opacity: 75%; */
+	
+}
   #emailAlert{
       color:red;
   }
@@ -111,6 +117,8 @@ body {
 	font-family: Raleway;
   
   }
+
+
   
   /* Mark input boxes that gets an error on validation: */
   
@@ -300,3 +308,4 @@ body {
 	  }
 }	
 /*Security Question form Ends*/  
+
