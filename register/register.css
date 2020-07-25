@@ -88,7 +88,7 @@ box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99);
       color:red;
   }
   .title{
-	  color: #636363;
+	  color: black;
 	  text-align: center;
 	  font-size: 26px;
 	  margin-top: 0;
@@ -148,7 +148,7 @@ box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99);
   .form-control, .form-control:focus, .input-group-addon {
 	  border-color: #e1e1e1;
 	  border-radius: 0;
-	  color: #999;
+	  color: black;
   }
   .tab .input-group-addon {
 	  max-width: 42px;
@@ -186,7 +186,7 @@ box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99);
   .form-control, .form-control:focus, .input-group-add-on {
 	  border-color: #e1e1e1;
 	  border-radius: 0;
-	  color: #999;
+	  color: black;
   }
 
   select{
@@ -196,13 +196,13 @@ box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99);
 	border-width: 0 0 1px 0;
 	border-radius: 0;
 	border-color: #e1e1e1;
-	color: #999;
+	color: black;
   }
   .input-group-grad-cap{
 
 	border-color: #e1e1e1;
 	border-radius: 0;
-	color: #999;
+	color: black;
 	max-width: 55px;
 	text-align: center;
 	background: none;
@@ -251,7 +251,7 @@ box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99);
   .security-section label {
 	  font-weight: 500;
 	  font-size: 20px;
-	  color: #636363;
+	  color: black;
   }
   .security-section  .form-control {
 	  min-height: 38px;	

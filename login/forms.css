@@ -1,5 +1,5 @@
 body {
-	font-family: 'Varela Round', sans-serif;
+	font-family: Raleway;
 	/* background-image: url('backgroundimg.png'); */
 	background-repeat: no-repeat;	
 	background-attachment: fixed;
@@ -82,13 +82,13 @@ html,body
 }
 
 .title h4 {
-	color: #636363;
+	color: black;
 	text-align: center;
 	font-size: 26px;
 	margin-top: 0;
 }
 .login .content {
-	color: #999;
+	color: black;
 	border-radius: 1px;
 	margin-bottom: 15px;
 	background-color: #ffffff;
@@ -139,7 +139,7 @@ html,body
     
 }
 .login .modal-footer {
-	color: #999;
+	color: black;
 	border-color: #dee4e7;
 	text-align: center;
 	margin: 0 -25px -25px;
@@ -154,7 +154,7 @@ html,body
 	text-decoration: none;
 }
 .login a {
-	color: #19aa8d;
+	color: #007bff;
 	text-decoration: none;
 }	
 .login a:hover {
@@ -178,9 +178,60 @@ html,body
 }
 /* Forgot Password Form Section Starts*/
 
-.main-forgot-pass-body label{
-	font-weight: 500;
-	font-size: 19px;
+.main-forgot-pass-section{
+	margin: 100px auto;
+	font-family: Raleway;
+	padding: 40px;
+	width: 50%;
+	min-width: 350px;
+	
+}
+#forgetPasswordForm{
+	-webkit-box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99); 
+	box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99);
+	border-radius: 1%;
+}
+.main-forgot-pass-section h2 {
+	color: black;
+	margin: 0 0 15px;
+	text-align: center;
+}
+.main-forgot-pass-section form {		
+	border-radius: 1px;
+	margin-bottom: 15px;
+	background: #fff;
+	border: 1px solid #f3f3f3;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+}
+.main-forgot-pass-section .form-group {
+	margin-bottom: 20px;
+}
+.main-forgot-pass-sectionlabel {
+	font-weight: normal;
+	font-size: 13px;
+}
+.main-forgot-pass-section .form-control {
+	min-height: 38px;
+	box-shadow: none !important;
+	border-width: 0 0 1px 0;
+	
+}	
+.main-forgot-pass-section .input-group-addon {
+	max-width: 42px;
+	text-align: center;
+	background: none;
+	border-bottom: 1px solid #e1e1e1;
+	padding-left: 5px;
+}
+.main-forgot-pass-section .fa {
+	font-size: 21px;
+	position: relative;
+	top: 8px;
+}
+.alert{
+	margin: auto;
+	margin-bottom: 20px;
 }
 #userNameAlert{
 	color:red;
@@ -194,10 +245,15 @@ html,body
 /* Forgot Password Form Section Ends*/
 
 /* Reset Passowrd Form Section Starts*/
+#ResetPassForm{
+	-webkit-box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99); 
+	box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99);
+	border-radius: 1%;
+}
 .form-control, .form-control:focus, .input-group-addon {
 	border-color: #e1e1e1;
 	border-radius: 0;
-	color: #999;
+	color: black;
 }
 .reset-form{
 	margin: 100px auto;
@@ -205,13 +261,14 @@ html,body
 	padding: 40px;
 	width: 50%;
 	min-width: 350px;
+	
 }
 .reset-form h2 {
-	color: #636363;
+	color: black;
 	margin: 0 0 15px;
 	text-align: center;
 }
-.reset-form .lead {
+.reset-form .lead {/*Remove*/
 	font-size: 14px;
 	margin-bottom: 30px;
 	text-align: center;
@@ -286,7 +343,7 @@ html,body
   }
   .submit-button{
 	margin:5px;
-	padding: 4px 14px;
+	padding: 4px 18px;
 	font-size: 20px;
   }
  
@@ -298,6 +355,3 @@ html,body
 		align-items: center;
 	  }
 }	
-.main-forgot-pass-section{
-	padding-top: 100px;
-}

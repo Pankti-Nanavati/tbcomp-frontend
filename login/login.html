@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         
             
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <script type="text/javascript" src="login.js"></script>
+        <link rel="stylesheet" type="text/css" href="forms.css">
+        <script type="text/javascript" src="forms.js"></script>
     
     
     </head>
@@ -75,61 +75,55 @@
             </div>
         </div>
     </div> 
-    <div id="main-forgot-pass-section" class="row mt-5 main-forgot-pass-section">
-        <div class="col-sm-6 login  m-auto">
-            <div class="content">
-                <div class="form-header text-center">				
-                    <h4 class="title">Forgot Password</h4>
-                </div><br>
-                <div class="main-forgot-pass-body">
-                    <form name="forgetPasswordForm"  onsubmit="return nameValidation()">
-                        <div class="form-group">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                <input type="email" class="form-control" name="emailId" placeholder="Email" required>
-                            </div>
-                                <div class="form-group">
-                                    <small id="emailAlert2" class="form-text"></small>
-                                </div>
-                        </div>
-                        <div class="form-row" >
-                            <div class="alert alert-primary" role="alert" id="alert-message">
-                                Answer those questions, which you chose while creating Account.
-                            </div>
-                            <div class="alert alert-danger" role="alert" id="error-alert-message">
-                                You must answer two Security questions
-                            </div>
-                            <div class="alert alert-danger" role="alert" id="blank-alert-message">
-                                Please fill out Security Questions.
-                            </div>
-                        </div>
-                        <div class="form-group" id="question1">
-                            <div class="input-group">
-                                <label for="question2" id="firstQuestionLabel">What is your favorite Food?</label>
-                                <div class="form-row"><input type="text" class="form-control" size="28" name="question1" id="firstQuestion" placeholder="Your Response" ></div>
-                            </div>
-                        </div>
-                        <div class="form-group" id="question2">
-                            <div class="input-group">
-                                <label for="question2" id="secondQuestionLabel">What is your favorite Sport?</label>
-                                <div class="form-row"><input type="text" class="form-control"  size="28" name="question2" id="secondQuestion" placeholder="Your Response"></div>
-                            </div>
-                        </div>
-                        <div class="form-group" id="question3">
-                            <div class="input-group">
-                                <label for="question3" id="thirdQuestionLabel">What is your favorite Song?</label>
-                                <div class="form-row"><input type="text" class="form-control"  size="28" name="question3" id="thirdQuestion" placeholder="Your Response"></div>
-                            </div>
-                        </div>
-                        <div class="form-group button-center-align" id ="submitbtnForm">
-                            <button type="reset" class="btn btn-secondary reset-button">Reset</button>
-                            <button type="submit" class="btn btn-primary submit-button">Submit</button>
-                        </div>
-                    </form>
+    <div class="main-forgot-pass-section"  id="main-forgot-pass-section">	
+        <form name="forgetPasswordForm" id="ResetPassForm"action="" method="" onsubmit="return nameValidation()">
+            <h2>Forgot Password</h2>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                    <input type="email" class="form-control" name="emailId" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <small id="emailAlert2" class="form-text"></small>
+                </div>
+                <small id="emailAlert" class="form-text"></small>
+            </div>
+            <div class="form-row" >
+                <div class="alert alert-primary" role="alert" id="alert-message">
+                    Answer those questions, which you chose while creating Account.
+                </div>
+                <div class="alert alert-danger" role="alert" id="error-alert-message">
+                    You must answer two Security questions
+                </div>
+                <div class="alert alert-danger" role="alert" id="blank-alert-message">
+                    Please fill out Security Questions.
                 </div>
             </div>
-        </div>
+            <div class="form-group" id="question1">
+                <div class="input-group">
+                    <label for="question2" id="firstQuestionLabel">What is your favorite Food?</label>
+                    <div class="form-row"><input type="text" class="form-control ml-2" size="36" name="question1" id="firstQuestion" placeholder="Your Response" ></div>
+                </div>
+            </div>
+            <div class="form-group" id="question2">
+                <div class="input-group">
+                    <label for="question2" id="secondQuestionLabel">What is your favorite Sport?</label>
+                    <div class="form-row"><input type="text" class="form-control ml-2"  size="36" name="question2" id="secondQuestion" placeholder="Your Response"></div>
+                </div>
+            </div>
+            <div class="form-group" id="question3">
+                <div class="input-group">
+                    <label for="question3" id="thirdQuestionLabel">What is your favorite Song?</label>
+                    <div class="form-row"><input type="text" class="form-control ml-2"  size="36" name="question3" id="thirdQuestion" placeholder="Your Response"></div>
+                </div>
+            </div>
+            <div class="form-group button-center-align" id ="submitbtnForm">
+                <button type="reset" class="btn btn-secondary reset-button">Reset</button>
+                <button type="submit" class="btn btn-primary submit-button">Submit</button>
+            </div>
+        </form>
     </div>
+
     <!--<div class="reset-form" id="reset-password-form-section">	
         <form name="ResetPasswordForm" action="" method="">
             <h2>Reset Password</h2>
