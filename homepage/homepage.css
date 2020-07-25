@@ -306,8 +306,10 @@ ul.bb {
 /*footer css*/
 
 /*timeline*/
+
 .main-timeline{
-    
+    padding-left: 50px;
+    padding-right: 50px;
     position: relative;
 }
 .main-timeline:after{
@@ -323,6 +325,7 @@ ul.bb {
     position: relative;
     opacity: 0px;
     z-index: 1;
+
 
 }
 .main-timeline .timeline-content{
