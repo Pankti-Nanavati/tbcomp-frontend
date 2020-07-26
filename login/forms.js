@@ -1,11 +1,11 @@
 function userQuestion(){
     var loginForm = document.getElementById('main-login-form-section');
     var forgotPasswordForm = document.getElementById('main-forgot-pass-section');
-   
+    var loginLi = document.getElementById('login-li');
+    loginLi.className="nav-item";
 
     loginForm.style.display = "none";
     forgotPasswordForm.style.display = "block";
-
 }
     
 function loginValidation(){

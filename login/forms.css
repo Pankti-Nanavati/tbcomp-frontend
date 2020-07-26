@@ -183,6 +183,9 @@ html,body
 	color:red;
 }
 /* Forgot Password Form Section Starts*/
+#forgot-password-navbar{
+	display: none;
+}
 
 .main-forgot-pass-section{
 	margin: 100px auto;
