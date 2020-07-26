@@ -1,18 +1,13 @@
-html,body
-{
-    overflow-x: hidden; 
+html, body {
+  overflow-x: hidden;
 }
 
-
-
-
 body, html {
- 
   font-family: Arial, Helvetica, sans-serif;
- 
 }
 
 /*Landing page*/
+
 .hero-image {
   background-image: url("image.jpg");
   height: 100vh;
@@ -20,18 +15,31 @@ body, html {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
+  box-shadow: 0 10px 8px -8px black;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 @keyframes showTopText {
-  0% { transform: translate3d(0, 100%, 0); }
-  40%, 60% { transform: translate3d(0, 50%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  40%, 60% {
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
+
 @keyframes showBottomText {
-  0% { transform: translate3d(0, -100%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
 }
+
 .animated-title {
   color: #222;
   font-family: Roboto, Arial, sans-serif;
@@ -41,42 +49,49 @@ body, html {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 70vmin;
-  padding: 7vmin ;
+  padding: 7vmin;
 }
-.animated-title > div {
+
+.animated-title>div {
   height: 50%;
   overflow: hidden;
   position: absolute;
   width: 100%;
 }
-.animated-title > div div {
- 
+
+.animated-title>div div {
   padding: 2vmin 0;
   position: absolute;
 }
-.animated-title > div div span {
+
+.animated-title>div div span {
   display: block;
 }
-.animated-title > div.text-top {
-  border-bottom: 1vmin solid #2d9cc2 ;
+
+.animated-title>div.text-top {
+  border-bottom: 1vmin solid #2d9cc2;
   top: 0;
   font-size: 9vmin;
 }
-.animated-title > div.text-top div {
+
+.animated-title>div.text-top div {
   animation: showTopText 1s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   bottom: 0;
   transform: translate(0, 100%);
 }
-.animated-title > div.text-top div span:first-child {
-  color: black;}
 
-.animated-title > div.text-bottom {
+.animated-title>div.text-top div span:first-child {
+  color: black;
+}
+
+.animated-title>div.text-bottom {
   bottom: 0;
   font-size: 4vmin;
 }
-.animated-title > div.text-bottom div {
+
+.animated-title>div.text-bottom div {
   animation: showBottomText 0.5s;
   animation-delay: 1.75s;
   animation-fill-mode: forwards;
@@ -86,70 +101,72 @@ body, html {
 
 /*landing page*/
 
-
-
-
-
 /*navbar*/
 
-.navbar-nav > li{
-  padding-left:30px;
+.navbar-nav>li {
+  padding-left: 30px;
   padding-right: 30px;
   font-size: 1.1em;
-   
 }
-.navbar-brand{
+
+.navbar-brand {
   padding-left: 20px;
   padding-right: 30px;
   margin-bottom: 0;
 }
 
-.navbar{
-    background-color: black;
-    opacity: 0.88;
-    box-shadow: 0px 1px 50px #999;
+.navbar {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.88;
+  box-shadow: 0px 1px 50px #999;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
-.navbar-brand{
-  font-size: 1.6em;
+.navbar-brand {
+  font-size: 1.5em;
 }
 
-.ml-auto .nav-link{
+.ml-auto .nav-link {
   margin-right: 20px;
-
 }
-.glypicon{
-  padding-left: 10px;
 
+.glypicon {
+  padding-left: 10px;
 }
 
 .nav-link:hover {
-  background-color:#1a1a1a;
+  background-color: #1a1a1a;
   font-size: 19px;
 }
+
 .active .nav-link {
-  border-bottom: 1.2px solid #2d9cc2;
+  border-bottom: 2px solid #2d9cc2;
 }
 
 .underlinehover {
-    display: inline-block;
+  display: inline-block;
 }
+
 .underlinehover:after {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 0;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
- }
- .underlinehover:hover:after {
-    width: 100%;
-    background: #2d9cc2;
- }
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.underlinehover:hover:after {
+  width: 100%;
+  background: #2d9cc2;
+}
 
 /*navbar ends*/
 
 /*landing page*/
+
 /*.header img{
   width:100%;
    height:100vh;
@@ -164,9 +181,8 @@ body, html {
   transform: translate(-50%, -50%);
   color: white;
 }*/
+
 /*landing page ends*/
-
-
 
 /*subject css*/
 
@@ -178,8 +194,8 @@ body, html {
   position: relative;
   text-align: center;
   cursor: default;
- margin-bottom: 20px;
- border-radius: 10px 10px 10px 10px;
+  margin-bottom: 20px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .hovereffect .overlay {
@@ -192,74 +208,78 @@ body, html {
   padding: 10px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px 10px 10px 10px;
-  
 }
 
 #sub1 {
   text-align: center;
   padding-top: 38px;
 }
+
 #sub2 {
   text-align: center;
   padding-top: 32px;
 }
+
 #sub3 {
   text-align: center;
   padding-top: 45px;
 }
+
 .hovereffect img {
   display: block;
   position: relative;
   object-fit: cover;
   width: 100%;
-  height: 40vh;
+  height: 34vh;
   border-radius: 10px 10px 10px 10px;
 }
 
 .hovereffect h2 {
- margin:30px;
+  margin: 30px;
   text-transform: uppercase;
   color: #fff;
   text-align: center;
   position: center;
   font-size: 17px;
   transition: all 0.4s ease-in-out;
-  font-weight:bold;
+  font-weight: bold;
   font-size: x-large;
- margin-top: 35px;
+  margin-top: 35px;
 }
+
 .row1 {
- margin-top: 10px;
- text-align: center;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .firstcolumn:hover {
-  -ms-transform: scale(1.05); /* IE 9 */
-  -webkit-transform: scale(1.05); /* Safari 3-8 */
-  transform: scale(1.05); 
+  -ms-transform: scale(1.05);
+  /* IE 9 */
+  -webkit-transform: scale(1.05);
+  /* Safari 3-8 */
+  transform: scale(1.05);
 }
+
 .secondcolumn:hover {
-  -ms-transform: scale(1.05); /* IE 9 */
-  -webkit-transform: scale(1.05); /* Safari 3-8 */
-  transform: scale(1.05); 
+  -ms-transform: scale(1.05);
+  /* IE 9 */
+  -webkit-transform: scale(1.05);
+  /* Safari 3-8 */
+  transform: scale(1.05);
 }
+
 .hovereffect .overlay:hover {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 /*subject css*/
 
-
-
-
-
 /*footer css*/
 
 .footer {
-  background-color:black;
+  background-color: black;
   width: auto;
   padding-top: 30px;
   padding-bottom: 20px;
@@ -270,7 +290,6 @@ body, html {
     width: 100%;
     display: block;
     margin-bottom: 20px;
-    
   }
 }
 
@@ -278,19 +297,15 @@ body, html {
   float: left;
   color: white;
   text-align: left;
- 
 }
-
 
 .column .side {
   text-align: left;
 }
-.column .side .bb .a:hover{
+
+.column .side .bb .a:hover {
   text-decoration: none;
 }
-
-
-
 
 ul.bb {
   list-style-type: none;
@@ -298,6 +313,7 @@ ul.bb {
   color: white;
   font-size: 14px;
 }
+
 /* .button  {
   background-color:#2d9cc2;
   border: none;
@@ -315,29 +331,29 @@ ul.bb {
   font-weight: bold;
 } */
 
-.footer-btn{
-  background-color:#2d9cc2;
+.footer-btn {
+  background-color: #2d9cc2;
   cursor: pointer;
 }
+
 .footer-btn:hover {
   background-color: green;
 }
+
 .button1:active {
-  outline:none; 
+  outline: none;
   background-color: green;
 }
 
 .column .fa {
-  font-size:18px;
- 
+  font-size: 18px;
 }
 
 .counter {
   height: 30px;
 }
+
 /*footer css*/
-
-
 
 /*.main-timeline{
     padding-left: 50px;
@@ -490,12 +506,3 @@ ul.bb {
 {
     opacity:0.5;
 }*/
-
-
-
-
-
-
-
-
-
