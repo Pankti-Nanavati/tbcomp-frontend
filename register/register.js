@@ -1,11 +1,14 @@
  function RegisterValidation(){
     var email=document.forms["RegisterForm"]["emailId"].value;
     var email_patt=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    var password =  document.forms["RegisterForm"]["registerPassword"].value;
+    alert(password);
+    var passwordpattern=/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
     
-    var user_name = document.forms["RegisterForm"]["collegeName"].value;
+    var clg_name = document.forms["RegisterForm"]["collegeName"].value;
     var userPattern = /^[a-zA-Z]+$/;
 
-    var main_pass=document.forms["RegisterForm"]["password"].value;
     var confirm_pass=document.forms["RegisterForm"]["confirmPassword"].value;
     
     if(email_patt.test(email) == false )
@@ -17,7 +20,17 @@
 		document.getElementById('emailAlert').innerHTML = '';
         document.getElementById('emailAlert').style.display = 'none';
     }
-    if(main_pass != confirm_pass)
+    if (passwordpattern.test(password) == false)
+    {
+        alert('Yes')
+        document.getElementById('passwordAlert').innerHTML=" **Please enter valid Password"
+		return false;
+    }
+    else{
+        document.getElementById('passwordAlert').innerHTML = '';
+		document.getElementById('passwordAlert').style.display = 'none';
+    }
+    if(password != confirm_pass)
 	{
 		document.getElementById('confPasswordAlert').innerHTML='**Please enter the correct Password';
 		return false;
@@ -26,10 +39,10 @@
 		document.getElementById('confPasswordAlert').innerHTML = '';
         document.getElementById('confPasswordAlert').style.display = 'none';
 	}
-    if((userPattern.test(user_name)==false))
+    if((userPattern.test(clg_name)==false))
     {
-                document.getElementById('collegeNameAlert').innerHTML=" **Please enter a valid College/University name";
-                return false;
+        document.getElementById('collegeNameAlert').innerHTML=" **Please enter a valid College/University name";
+        return false;
     }
     else
     {
@@ -77,11 +90,3 @@
        
     } 
 }
-/*
-function GotoRegisterForm(){
-    var registerForm = document.getElementById('regForm');
-    var SecurityForm = document.getElementById('SecurityForm');
-
-    registerForm.style.display = "block";
-    SecurityForm.style.display = "none";
-}*/

@@ -8,7 +8,6 @@ body {
 }
 html,body
 {
-  font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden; 
 }
 
@@ -87,10 +86,10 @@ html,body
 	border: none;
 }
 
-.title h4 {
+.title {
 	color: black;
 	text-align: center;
-	font-size: 26px;
+	font-size: 35px;
 	margin-top: 0;
 }
 .login .content {
@@ -184,50 +183,16 @@ html,body
 }
 #message {
 	display:none;
-	background: #f1f1f1;
-	color: #000;
-	position: relative;
-	padding: 20px;
-	margin-top: 10px;
-  }
+	padding: 5px;
+}
   
-  #message p {
-	padding: 10px 35px;
-	font-size: 18px;
-  }
-  
-  /* Add a green text color and a checkmark when the requirements are right */
-  .valid {
-	color: green;
-  }
-  
-  .valid:before {
-	position: relative;
-	left: -35px;
-	content: "✔";
-  }
-  
-  /* Add a red text color and an "x" when the requirements are wrong */
-  .invalid {
-	color: red;
-  }
-  
-  .invalid:before {
-	position: relative;
-	left: -35px;
-	content: "✖";
-  }
-
-  span.field-icon {
-	position: absolute;
-	display: inline-block;
-	cursor: pointer;
-	right: 0.5rem;
-	top: 0.7rem;
-	color: black;
-	z-index: 2;
-  }
-  
+#message p {
+	padding: 5px;
+}
+#login-button{
+	color:white;
+	background-color: rgb(0, 0, 0);
+}
 /* Forgot Password Form Section Starts*/
 #forgot-password-navbar{
 	display: none;
@@ -297,6 +262,9 @@ html,body
 #blank-alert-message{
 	display: none;
 }
+#passwordAlert{
+	color:red;
+}
 /* Forgot Password Form Section Ends*/
 
 /* Reset Passowrd Form Section Starts*/
@@ -322,6 +290,7 @@ html,body
 	color: black;
 	margin: 0 0 15px;
 	text-align: center;
+	font-size: 35px;
 }
 .reset-form .lead {/*Remove*/
 	font-size: 14px;
@@ -394,14 +363,22 @@ html,body
 	margin: 5px;  
 	padding: 3.5px 25px ;
 	font-size: 20px;
-	
+	color: rgb(0, 0, 0);
+	background-color: white;
+	border: 1px solid rgb(0, 0, 0);
   }
   .submit-button{
 	margin:5px;
 	padding: 4px 18px;
 	font-size: 20px;
+	color: white;
+	background-color: rgb(0, 0, 0);
   }
  
+.submit-button:hover {        
+	color: white;
+	background-color: rgb(0, 0, 0);
+}
 
   @media screen and (min-width: 603px) {
 	.button-center-align{
