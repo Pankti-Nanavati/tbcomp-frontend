@@ -7,7 +7,6 @@ body, html {
 }
 
 /*Landing page*/
-
 .hero-image {
   background-image: url("image.jpg");
   height: 100vh;
@@ -219,12 +218,12 @@ body, html {
 
 #sub2 {
   text-align: center;
-  padding-top: 32px;
+  padding-top: 30px;
 }
 
 #sub3 {
   text-align: center;
-  padding-top: 45px;
+  padding-top: 40px;
 }
 
 .hovereffect img {
