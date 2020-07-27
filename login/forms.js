@@ -3,7 +3,7 @@ function userQuestion(){
     var forgotPasswordForm = document.getElementById('main-forgot-pass-section');
     var loginLi = document.getElementById('login-li');
     loginLi.className="nav-item";
-
+    loginLi.className="underlinehover";
     loginForm.style.display = "none";
     forgotPasswordForm.style.display = "block";
 }
