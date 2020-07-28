@@ -1,6 +1,5 @@
 body {
 	font-family: Raleway;
-	/* background-image: url('backgroundimg.png'); */
 	background-repeat: no-repeat;	
 	background-attachment: fixed;
 	background-size: cover;
@@ -17,13 +16,11 @@ html,body
   padding-right: 30px;
   font-size: 1.1em;
 }
-
 .navbar-brand {
   padding-left: 20px;
   padding-right: 30px;
   margin-bottom: 0;
 }
-
 .navbar {
   background-color: rgb(0, 0, 0);
   opacity: 0.88;
@@ -73,19 +70,13 @@ html,body
 }
 
 /*navbar ends*/
+/*login form begin*/
 #main-login-form-section{
 	padding-top: 100px;
 }
 .login {
 	width: 350px;
 }
-
-.login .content {
-	padding: 20px;
-	border-radius: 25px;
-	border: none;
-}
-
 .title {
 	color: black;
 	text-align: center;
@@ -93,6 +84,9 @@ html,body
 	margin-top: 0;
 }
 .login .content {
+	padding: 20px;
+	border-radius: 25px;
+	border: none;
 	color: black;
 	border-radius: 1px;
 	margin-bottom: 15px;
@@ -131,17 +125,14 @@ html,body
 .login .btn, .login .btn:active {        
 	font-size: 16px;
 	font-weight: bold;
-
 	border-radius: 3px;
 	border: none;
 	min-width: 140px;
 }
-
 .login .hint-text {
 	float: right;
 	padding-top: 5px;
-    font-size: 13px;
-    
+    font-size: 13px;   
 }
 .login .modal-footer {
 	color: black;
@@ -170,14 +161,6 @@ html,body
 	position: relative;
 	top: 6px;
 }
-.trigger-btn {
-	display: inline-block;
-	margin: 100px auto;
-}
-.main-forgot-pass-section{
-    display: none;
-}
-
 #emailAlert{
 	color:red;
 }
@@ -185,7 +168,6 @@ html,body
 	display:none;
 	padding: 5px;
 }
-  
 #message p {
 	padding: 5px;
 }
@@ -197,14 +179,13 @@ html,body
 #forgot-password-navbar{
 	display: none;
 }
-
 .main-forgot-pass-section{
 	margin: 100px auto;
 	font-family: Raleway;
 	padding: 40px;
 	width: 50%;
 	min-width: 350px;
-	
+	display: none;	
 }
 #forgetPasswordForm{
 	-webkit-box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99); 
@@ -265,100 +246,6 @@ html,body
 #passwordAlert{
 	color:red;
 }
-/* Forgot Password Form Section Ends*/
-
-/* Reset Passowrd Form Section Starts*/
-#ResetPassForm{
-	-webkit-box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99); 
-	box-shadow: 7px 7px 15px -1px rgba(103,103,103,0.99);
-	border-radius: 1%;
-}
-.form-control, .form-control:focus, .input-group-addon {
-	border-color: #e1e1e1;
-	border-radius: 0;
-	color: black;
-}
-.reset-form{
-	margin: 100px auto;
-	font-family: Raleway;
-	padding: 40px;
-	width: 50%;
-	min-width: 350px;
-	
-}
-.reset-form h2 {
-	color: black;
-	margin: 0 0 15px;
-	text-align: center;
-	font-size: 35px;
-}
-.reset-form .lead {/*Remove*/
-	font-size: 14px;
-	margin-bottom: 30px;
-	text-align: center;
-}
-.reset-form form {		
-	border-radius: 1px;
-	margin-bottom: 15px;
-	background: #fff;
-	border: 1px solid #f3f3f3;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-	padding: 30px;
-}
-.reset-form .form-group {
-	margin-bottom: 20px;
-}
-.reset-form label {
-	font-weight: normal;
-	font-size: 13px;
-}
-.reset-form .form-control {
-	min-height: 38px;
-	box-shadow: none !important;
-	border-width: 0 0 1px 0;
-}	
-.reset-form .input-group-addon {
-	max-width: 42px;
-	text-align: center;
-	background: none;
-	border-bottom: 1px solid #e1e1e1;
-	padding-left: 5px;
-}
-.reset-form .btn, .reset-form .btn:active {        
-	font-size: 16px;
-	font-weight: bold;
-	border-radius: 3px;
-	border: none;
-	min-width: 140px;
-}
-
-.reset-form a {
-	text-decoration: none;
-}	
-.reset-form a:hover {
-	text-decoration: underline;
-}
-.reset-form .fa {
-	font-size: 21px;
-	position: relative;
-	top: 8px;
-}
-.reset-form .fa-paper-plane {
-	font-size: 17px;
-}
-.reset-form .fa-check {
-	color: #fff;
-	left: 9px;
-	top: 18px;
-	font-size: 7px;
-	position: absolute;
-}
-#confPasswordAlert{
-	color:red;
-}
-#emailAlert2{
-	color:red;
-}
 .reset-button{
 	margin: 5px;  
 	padding: 3.5px 25px ;
@@ -367,23 +254,24 @@ html,body
 	background-color: white;
 	border: 1px solid rgb(0, 0, 0);
   }
-  .submit-button{
+.submit-button{
 	margin:5px;
 	padding: 4px 18px;
 	font-size: 20px;
 	color: white;
 	background-color: rgb(0, 0, 0);
-  }
+}
  
 .submit-button:hover {        
 	color: white;
 	background-color: rgb(0, 0, 0);
 }
 
-  @media screen and (min-width: 603px) {
+@media screen and (min-width: 603px) {
 	.button-center-align{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	  }
+	}
 }	
+/* Forgot Password Form Section Ends*/
