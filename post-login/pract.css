@@ -23,32 +23,11 @@
     
   
 }
-.row31{
-    margin-top: 50px;
-    margin-left: 35px;
-    margin-right: 35px;
-    height: 100px;
-}
-
-.row32{
-    margin-top: 20px;
-    margin-left: 35px;
-    margin-right: 35px;
-    height: 100px;
-}
-
-.row33{
-    margin-top: 20px;
-    margin-left: 35px;
-    margin-right: 35px;
-    height: 100px;
-}
 
 .topic1{
     
     color: blue;
     background-color: black;
-    
     height: 100px;
 }
 .topic2{
@@ -63,7 +42,6 @@
   
     color: blue;
     background-color: black;
-  
     height: 100px;
 }
 .topic4{
@@ -73,13 +51,25 @@
     height: 100px;
 }
 .topic5{
- 
     color:blue;
     background-color: pink;
     height: 100px;
 }
-
-
+#subject2-row1{
+    margin:10px;
+}
+#subject2-row2{
+    margin:10px;
+}
+#subject3-row1{
+    margin:10px;
+}
+#subject3-row2{
+    margin:10px;
+}
+#subject3-row3{
+    margin:10px;
+}
 
 .carousel-inner .carousel-item {
     height: 500px;
@@ -124,15 +114,19 @@
     content:"ello!";
 }
 
+
 @media screen and (max-width:432px){
     .topic1{
         margin: 10px;
+        display: block;
     }
     .topic2{
         margin: 10px;
+        display: block;
     }
     .topic3{
         margin: 10px;
+        display: block;
     }
     .topic4{
         margin: 10px;
@@ -142,5 +136,8 @@
         margin: 10px;
         display: block;
     }
+    .carousel-inner .carousel-item{
+        height: 1150px;
 
+    }
 }
