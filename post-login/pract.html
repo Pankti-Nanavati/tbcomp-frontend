@@ -12,60 +12,63 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="pract.css">
 
-
+<!----JS template-----> 
+   <script type="text/javascript" src="postlogin.js"></script>
 </head>
 <body>
 
     
   <div class="container">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+    <div class="row">
+        <div class="column col-xl-12 col-md-12 col-sm-12 ">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
      
       <div class="carousel-inner">
         <div class="carousel-item active subject1-slide">
           <div class="div1">   
             <h1 >subject1</h1>
           </div>
-          <div class="row justify-content-around row1">
-            <div class="col-sm-12 col-md-3 topic1">TOPIC 1 </div>
-            <div class="col-sm-12 col-md-3 topic2">TOPIC 2</div>
-            <div class="col-sm-12 col-md-3 topic3">TOPIC 3</div>
+          <div class="row justify-content-around row1" id="subject1">
+            <div class="col-sm-12 col-md-3 topic">TOPIC 1 </div>
+            <div class="col-sm-12 col-md-3 topic">TOPIC 2</div>
+            <div class="col-sm-12 col-md-3 topic">TOPIC 3</div>
           </div>
 
 
         </div>
-        <div class="carousel-item subject-slides">
+        <div class="carousel-item ">
           <div class="div1">   
             <h1 >subject2</h1>
           </div>
           <div class="row justify-content-around" id="subject2-row1">
-            <div class="col-sm-12 col-md-3 topic1">TOPIC 1</div>
-            <div class="col-sm-12 col-md-3 topic2">TOPIC 2</div>
-            <div class="col-sm-12 col-md-3 topic3" >TOPIC 3</div>
+            <div class="col-sm-12 col-md-3 topic divsize2">TOPIC 1</div>
+            <div class="col-sm-12 col-md-3 topic divsize2">TOPIC 2</div>
+            <div class="col-sm-12 col-md-3 topic divsize2" >TOPIC 3</div>
           </div>
           <div class="row justify-content-around" id="subject2-row2">
-            <div class="col-sm-12 col-md-3 topic4">TOPIC 4</div>
-            <div class="col-sm-12 col-md-3 topic5">TOPIC 5</div>
+            <div class="col-sm-12 col-md-3 topic divsize2">TOPIC 4</div>
+            <div class="col-sm-12 col-md-3 topic divsize2">TOPIC 5</div>
           </div>
         </div>
 
 
-        <div class="carousel-item subject-slides">
+        <div class="carousel-item ">
           <div class="div1">
             <h1>subject3</h1>
           </div>
           <div class="row justify-content-around" id="subject3-row1">
-            <div class="col-sm-12 col-md-3 topic1">TOPIC 1</div>
-            <div class="col-sm-12 col-md-3 topic2">TOPIC 2</div>
-            <div class="col-sm-12 col-md-3 topic3" >TOPIC 3</div>
+            <div class="col-sm-12 col-md-3 topic divsize3">TOPIC 1</div>
+            <div class="col-sm-12 col-md-3 topic divsize3">TOPIC 2</div>
+            <div class="col-sm-12 col-md-3 topic divsize3" >TOPIC 3</div>
           </div>
           <div class="row justify-content-around" id="subject3-row2">
-            <div class="col-sm-12 col-md-3 topic1">TOPIC 4</div>
-            <div class="col-sm-12 col-md-3 topic2">TOPIC 5</div>
-            <div class="col-sm-12 col-md-3 topic3" >TOPIC 6</div>
+            <div class="col-sm-12 col-md-3 topic divsize3">TOPIC 4</div>
+            <div class="col-sm-12 col-md-3 topic divsize3">TOPIC 5</div>
+            <div class="col-sm-12 col-md-3 topic divsize3" >TOPIC 6</div>
           </div>
           <div class="row justify-content-around" id="subject3-row3">
-            <div class="col-sm-12 col-md-3 topic4">TOPIC 7</div>
-            <div class="col-sm-12 col-md-3 topic5">TOPIC 8</div>
+            <div class="col-sm-12 col-md-3 topic divsize3">TOPIC 7</div>
+            <div class="col-sm-12 col-md-3 topic divsize3">TOPIC 8</div>
           </div>
         </div>
       </div>
@@ -74,10 +77,10 @@
     </div>
   
     <ol class="carousel-indicators">
-      <button id="btn1" data-target="#carouselExampleIndicators" data-slide-to="0">H<span></span></button>
-      <button id="btn1" data-target="#carouselExampleIndicators" data-slide-to="1">H<span></span></button>
-      <button id="btn1" data-target="#carouselExampleIndicators" data-slide-to="2">H<span></span></button>
-    </ol>
+            <button onclick="myFunction1()" id="btn1" data-target="#carouselExampleIndicators" data-slide-to="0" class="active">BEC<span></span></button>
+            <button onclick="myFunction2()" id="btn2" data-target="#carouselExampleIndicators" data-slide-to="1">E<span></span></button>
+            <button onclick="myFunction3()" id="btn3" data-target="#carouselExampleIndicators" data-slide-to="2">E<span></span></button>
+         </ol>
 
 
 </body>
