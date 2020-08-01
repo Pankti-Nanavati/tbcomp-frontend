@@ -1,4 +1,36 @@
+.div1{
+    text-align: center;
+}
 
+.fa-bars{
+    height: 50px;
+}
+.subject1{
+    margin-top: 150px;
+    border-radius: 2px;
+    border-color: black;
+    margin-left: 35px;
+    margin-right: 35px;
+  
+   height: 100px;
+
+}
+.topic1{
+    
+    color: blue;
+    background-color: black;
+}
+.topic2{
+    margin-left: 30px;
+    color: blue;
+    background-color: black;
+}
+
+.topic3{
+   margin-left: 30px;
+    color: blue;
+    background-color: black;
+}
 
 .carousel-inner .carousel-item {
     height: 500px;
