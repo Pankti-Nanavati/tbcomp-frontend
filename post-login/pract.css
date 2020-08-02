@@ -1,10 +1,19 @@
 .div1{
     text-align: center;
-    margin-top: 40px;
+    margin: 40px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 22px;
+    border: 0.5px solid #ccc;
+    padding:5px;
+
 }
 
-#subject1{
-    margin-top: 5em;
+#subject1-row1{
+    margin-top: 10px;
+}
+#subject1-row2{
+    margin-top: 10px;
 }
 .row1{
     /*margin-top: 100px;
@@ -12,18 +21,13 @@
     margin-right: 35px;*/
     height: 100px;
     margin: auto;
-
-
 }
-
 .row2{
     /*margin-top: 30px;
     margin-left: 120px;
     margin-right: 120px;*/
     height: 100px;
-    margin: auto;
-    
-  
+    margin: auto; 
 }
 
 .topic{
@@ -38,6 +42,9 @@
     
 }
 #subject2-row2{
+    margin:10px;
+}
+#subject2-row3{
     margin:10px;
 }
 #subject3-row1{
@@ -138,7 +145,7 @@
     font-weight: bolder;
     transition: width 0.7s;
     -moz-transition: width 0.7s;
-    -webkit-transition: width 0.7s, height 0.7s; 
+    -webkit-transitio\n: width 0.7s, height 0.7s; 
     -o-transition: width 0.7s;
     border-color: #2d9cc2;
     box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.35);
@@ -181,7 +188,7 @@
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
     } 
 /*button end*/
-
+/*
 @media screen and (max-width:432px){
 
     .topic{
@@ -218,4 +225,24 @@
     .divsize3{
         height: 45px;
     }
+}*/
+.card{
+    margin-bottom: 40px;
+    border-color: rgb(45, 156, 194);
 }
+@media only screen and (max-width:432px){
+    .card{
+        margin: 20px;
+    }
+    .carousel-inner .carousel-item{
+        height: 100%;
+    }
+    .div1{
+        font-size: 20px;
+        margin: 15px;
+        padding:10px;
+    }
+}
+
+
+
