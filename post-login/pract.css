@@ -55,127 +55,132 @@
 
 /*carousel start*/
 
-.container {
-    margin-top: 20px;
+.container { 
     align-self: center;
+}
+ 
     
-    }
-    
-    .column  {
-       background-color: white;
-       border-radius: 20px;
-       -webkit-box-shadow: 1px 3px 32px -1px rgba(128,128,128,1);
-       -moz-box-shadow: 1px 3px 32px -1px rgba(128,128,128,1);
-       box-shadow: 1px 3px 32px -1px rgba(128,128,128,1);
-      
-    }
-    #carouselExampleIndicators {
-        height: 600px;
-    }
+#carouselExampleIndicators {
+    height: 600px;
+    -webkit-box-shadow: 1px 3px 32px -1px rgba(128,128,128,1);
+    -moz-box-shadow: 1px 3px 32px -1px rgba(128,128,128,1);
+    box-shadow: 1px 3px 32px -1px rgba(128,128,128,1);
+    background-color: white;
+    border-radius: 20px;
+       
+}
    
-    .carousel-inner .carousel-item {
-        color: black;
-        background-color:white;
-       }
+.carousel-inner .carousel-item {
+    color: black;
+    background-color:white;
+    }
 
-      /*carousel end*/
+.carousel-indicators {
+    text-align: center;
+    font-size: 1em;
+    margin-left: 0%;
+    margin-right: 60%;
+ }
+   
+.column1 {
+    left: 15px;
+   }
+
+/*carousel end*/
       
-      /*button start*/
-       #btn1 {
-        background-color:#2d9cc2;
-        border: none;
-        color: black;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 1em;
-        border-style: solid;
-        width: 15em;
-        border-width: 1px;
-        margin: 10px;
-        border-radius: 8em;
-        outline: none; 
-        font-weight: bolder;
-        transition: width 0.7s;
-       -moz-transition: width 0.7s;
-       -webkit-transition: width 0.7s, height 0.7s; 
-       -o-transition: width 0.7s;
-       border-color: #2d9cc2;
-       box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.35);
-       cursor: pointer;  
-       transition: 0.2s all; 
-        }
-        #btn1:active { 
-          transform: scale(0.98); 
-          /* Scaling button to 0.98 to its original size */ 
-          box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
-          /* Lowering the shadow */ 
-      } 
-        #btn2 {
-          background-color:white;
-          border: none;
-          color: black;
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 1em;
-          border-style: solid;
-          width: 10em;
-          border-width: 1px;
-          margin: 10px;
-          border-radius: 8em;
-          outline: none; 
-          font-weight: bolder;
-          transition: width 0.7s;
-         -moz-transition: width 0.7s;
-         -webkit-transition: width 0.7s, height 0.7s; 
-         -o-transition: width 0.7s;
-         border-color: #2d9cc2;
-         box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.35);
-         cursor: pointer;  
-         transition: 0.2s all; 
-       }
-       #btn2:active { 
-          transform: scale(0.98); 
-          /* Scaling button to 0.98 to its original size */ 
-          box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
-          /* Lowering the shadow */ 
-      } 
-        #btn3 {
-          background-color:white;
-          border: none;
-          color: black;
-          padding: 15px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 1em;
-          border-style: solid;
-          width: 10em;
-          border-width: 1px;
-          margin: 10px;
-          border-radius: 8em;
-          outline: none; 
-          font-weight: bolder;
-          transition: width 0.7s;
-         -moz-transition: width 0.7s;
-         -webkit-transition: width 0.7s, height 0.7s; 
-         -o-transition: width 0.7s;
-         border-color: #2d9cc2;
-         box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.35); 
-         cursor: pointer; 
-         transition: 0.2s all; 
-        }
+/*button start*/
+       
+ #btn1 {
+     background-color:#2d9cc2;
+    border: none;
+    color: black;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-style: solid;
+    width: 15em;
+    border-width: 1px;
+    margin: 10px;
+    border-radius: 8em;
+    outline: none; 
+    font-weight: bolder;
+    transition: width 0.7s;
+    -moz-transition: width 0.7s;
+    -webkit-transition: width 0.7s, height 0.7s; 
+    -o-transition: width 0.7s;
+    border-color: #2d9cc2;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.35);
+    cursor: pointer;  
+    transition: 0.2s all; 
+    margin-left: 3%;
+}
+#btn1:active { 
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+} 
         
-        #btn3:active { 
-          transform: scale(0.98); 
-          /* Scaling button to 0.98 to its original size */ 
-          box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
-          /* Lowering the shadow */ 
-      } 
-    /*button end*/
+#btn2 {
+    background-color:white;         
+    border: none;         
+    color: black;
+    text-align: center;        
+    text-decoration: none;         
+    display: inline-block;         
+    font-size: 1em;          
+    border-style: solid;          
+    width: 5em;
+    border-width: 1px;
+    margin: 10px;
+    border-radius: 8em;
+    outline: none; 
+    font-weight: bolder;
+    transition: width 0.7s;
+    -moz-transition: width 0.7s;
+    -webkit-transition: width 0.7s, height 0.7s; 
+    -o-transition: width 0.7s;
+    border-color: #2d9cc2;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.35);
+    cursor: pointer;  
+    transition: 0.2s all; 
+}
+
+#btn2:active { 
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+    } 
+
+#btn3 {
+    background-color:white;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-style: solid;
+    width: 5em;
+    border-width: 1px;
+    margin: 10px;
+    border-radius: 8em;
+    outline: none; 
+    font-weight: bolder;
+    transition: width 0.7s;
+    -moz-transition: width 0.7s;
+    -webkit-transition: width 0.7s, height 0.7s; 
+    -o-transition: width 0.7s;
+    border-color: #2d9cc2;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.35);
+    cursor: pointer;  
+    transition: 0.2s all; 
+}
+        
+#btn3:active { 
+    transform: scale(0.98); 
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+    } 
+/*button end*/
 
 @media screen and (max-width:432px){
 
