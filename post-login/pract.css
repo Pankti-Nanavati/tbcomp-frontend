@@ -170,7 +170,7 @@ box-shadow: 1px 1px 25px 0px rgba(107,104,107,1);
     display: inline-block;
     font-size: 1em;
     border-style: solid;
-    width: 15em;
+    width: 8em;
     border-width: 1px;
     margin: 10px;
     border-radius: 8em;
@@ -181,14 +181,12 @@ box-shadow: 1px 1px 25px 0px rgba(107,104,107,1);
     -webkit-transition: width 0.7s, height 0.7s; 
     -o-transition: width 0.7s;
     border-color: #2d9cc2;
-    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.35);
     cursor: pointer;  
     transition: 0.2s all; 
     margin-left: 3%;
 }
 #btn1:active { 
     transform: scale(0.98); 
-    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
 } 
         
 #btn2 {
@@ -201,7 +199,7 @@ box-shadow: 1px 1px 25px 0px rgba(107,104,107,1);
     display: inline-block;         
     font-size: 1em;          
     border-style: solid;          
-    width: 5em;
+    width: 4em;
     border-width: 1px;
     margin: 10px;
     border-radius: 8em;
@@ -212,14 +210,12 @@ box-shadow: 1px 1px 25px 0px rgba(107,104,107,1);
     -webkit-transitio\n: width 0.7s, height 0.7s; 
     -o-transition: width 0.7s;
     border-color: #2d9cc2;
-    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.35);
     cursor: pointer;  
     transition: 0.2s all; 
 }
 
 #btn2:active { 
     transform: scale(0.98); 
-    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
     } 
 
 #btn3 {
@@ -232,7 +228,7 @@ box-shadow: 1px 1px 25px 0px rgba(107,104,107,1);
     display: inline-block;
     font-size: 1em;
     border-style: solid;
-    width: 5em;
+    width: 4em;
     border-width: 1px;
     margin: 10px;
     border-radius: 8em;
@@ -243,14 +239,12 @@ box-shadow: 1px 1px 25px 0px rgba(107,104,107,1);
     -webkit-transition: width 0.7s, height 0.7s; 
     -o-transition: width 0.7s;
     border-color: #2d9cc2;
-    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.35);
     cursor: pointer;  
     transition: 0.2s all; 
 }
         
 #btn3:active { 
-    transform: scale(0.98); 
-    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+    transform: scale(0.98);  
     } 
 /*button end*/
 /*

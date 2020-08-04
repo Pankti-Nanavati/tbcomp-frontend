@@ -36,9 +36,9 @@ element.addEventListener
       btn1.style.color="white";
       btn2.style.color="black";
       btn3.style.color="black";
-      btn1.style.width="15em";
-      btn2.style.width="5em";
-      btn3.style.width="5em";
+      btn1.style.width="8em";
+      btn2.style.width="4em";
+      btn3.style.width="4em";
       btn1.innerHTML = "BEC";
       btn2.innerHTML = "<img src=\'icon1.png\' width=\'16em\' height=\'25em\'>";
       btn3.innerHTML = "<img src=\'icon1.png\' width=\'16em\' height=\'25em\'>";
@@ -52,9 +52,9 @@ function myFunction2() {
       btn1.style.color="black";
       btn3.style.color="black";
       btn2.style.backgroundColor="#2d9cc2";
-      btn2.style.width="15em";
-      btn1.style.width="5em";
-      btn3.style.width="5em";
+      btn2.style.width="8em";
+      btn1.style.width="4em";
+      btn3.style.width="4em";
       btn1.style.backgroundColor="white";
       btn3.style.backgroundColor="white";
       btn2.innerHTML = "EEEE";
@@ -71,9 +71,9 @@ function myFunction3() {
       btn3.style.backgroundColor="#2d9cc2";
       btn1.style.backgroundColor="white";
       btn2.style.backgroundColor="white";
-      btn3.style.width="15em";
-      btn2.style.width="5em";
-      btn1.style.width="5em";
+      btn3.style.width="8em";
+      btn2.style.width="4em";
+      btn1.style.width="4em";
       btn3.innerHTML = "ECAD";
       btn1.innerHTML = "<img src=\'icon1.png\' width=\'16em\' height=\'25em\'>";
       btn2.innerHTML = "<img src=\'icon1.png\' width=\'16em\' height=\'25em\'>";
