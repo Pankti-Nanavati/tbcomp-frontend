@@ -39,7 +39,7 @@ element.addEventListener
       btn1.style.width="8em";
       btn2.style.width="4em";
       btn3.style.width="4em";
-      btn1.innerHTML = "BEC";
+      btn1.innerHTML = "EEEE";
       btn2.innerHTML = "<img src=\'icon1.png\' width=\'16em\' height=\'25em\'>";
       btn3.innerHTML = "<img src=\'icon1.png\' width=\'16em\' height=\'25em\'>";
      
@@ -57,7 +57,7 @@ function myFunction2() {
       btn3.style.width="4em";
       btn1.style.backgroundColor="white";
       btn3.style.backgroundColor="white";
-      btn2.innerHTML = "EEEE";
+      btn2.innerHTML = "BEC";
       btn1.innerHTML = "<img src=\'icon1.png\' width=\'16em\' height=\'25em\'>";
       btn3.innerHTML = "<img src=\'icon1.png\' width=\'16em\' height=\'25em\'>";
 }

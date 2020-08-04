@@ -207,7 +207,7 @@ box-shadow: 1px 1px 25px 0px rgba(107,104,107,1);
     font-weight: bolder;
     transition: width 0.7s;
     -moz-transition: width 0.7s;
-    -webkit-transitio\n: width 0.7s, height 0.7s; 
+    -webkit-transition: width 0.7s, height 0.7s; 
     -o-transition: width 0.7s;
     border-color: #2d9cc2;
     cursor: pointer;  
@@ -288,6 +288,9 @@ box-shadow: 1px 1px 25px 0px rgba(107,104,107,1);
 .card{
     margin-bottom: 40px;
     border-color: rgb(45, 156, 194);
+}
+.card-title{
+    font-size: 16px;
 }
 @media only screen and (max-width:432px){
     .card{
