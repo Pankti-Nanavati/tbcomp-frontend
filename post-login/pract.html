@@ -16,18 +16,44 @@
    <script type="text/javascript" src="postlogin.js"></script>
 </head>
 <body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#">Inderjit Singh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="fa fa-home"></span> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item underlinehover">
+              <a class="nav-link" href="#">Contact Us <span class="fa fa-phone"></span></a>
+            </li>
+          </ul>
+        
+          <ul class="navbar-nav ml-auto"> 
+                <li class="nav-item underlinehover "> 
+                  <a class="nav-link " href="..\login\login.html">Login<span class="fa fa-sign-in"></span></a>    
+                </li> 
+              </ul>
+        </div>
+      </nav>
+    <!-- navbar ends -->
+<br>
+
   <div class="container">
     <div class="row row1">
       <div class="column col-xl-12 col-md-12 col-sm-12 column1 ">
         <ol class="carousel-indicators">
           <button onclick="myFunction1()" id="btn1" data-target="#carouselExampleIndicators" data-slide-to="0" class="active">BEC<span></span></button>
-          <button onclick="myFunction2()" id="btn2" data-target="#carouselExampleIndicators" data-slide-to="1">E<span></span></button>
-         <button onclick="myFunction3()" id="btn3" data-target="#carouselExampleIndicators" data-slide-to="2">E<span></span></button>
+          <button onclick="myFunction2()" id="btn2" data-target="#carouselExampleIndicators" data-slide-to="1"><img src="icon1.png" style="height:1.6em; width: 1em;" ></button>
+         <button onclick="myFunction3()"  id="btn3" data-target="#carouselExampleIndicators" data-slide-to="2"><img src="icon1.png" style="height:1.6em; width: 1em;" ><span></span></button>
        </ol>
       </div>
     </div>
     <div class="row row2">
-        <div class="column col-xl-10 col-md-10 col-sm-12 ">
+        <div class="column col-xl-10 col-md-10 col-sm-12 offset-md-1 column2">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
      
       <div class="carousel-inner">
