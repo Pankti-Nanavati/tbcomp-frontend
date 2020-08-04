@@ -290,6 +290,41 @@ box-shadow: 1px 1px 25px 0px rgba(107,104,107,1);
     border-color: rgb(45, 156, 194);
 
 }
+.card2 {
+    background-color: dodgerblue;
+    color: white;
+    padding: 1rem;
+    height: 4rem;
+    margin: 10px;
+
+  }
+  .cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .topic3{
+      display: block;
+  }
+  .line-break {
+    width: 100%;
+  }
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+  }
+  
+  /* items */
+  
+  .grid-1 div {
+    color: white;
+    bac
+    font-size: 20px;
+    padding: 20px;
+    }
 .card-title{
     font-size: 16px;
 }
