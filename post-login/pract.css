@@ -65,15 +65,16 @@
 
 .div1{
     text-align: center;
-    margin: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
     font-size: 25px;
     font-weight: 600;
     border-radius: 22px;
     border: 0.5px solid #ccc;
     padding:5px;
-    -webkit-box-shadow: 1px 1px 25px 0px rgba(107,104,107,1);
--moz-box-shadow: 1px 1px 25px 0px rgba(107,104,107,1);
-box-shadow: 1px 1px 25px 0px rgba(107,104,107,1);
+    
+box-shadow: 1.5px 1.5px 1px 1px rgba(107,104,107,1);
 }
 
 #subject1-row1{
@@ -247,52 +248,37 @@ box-shadow: 1px 1px 25px 0px rgba(107,104,107,1);
     transform: scale(0.98);  
     } 
 /*button end*/
-/*
-@media screen and (max-width:432px){
 
-    .topic{
-        margin-top: 5px;
-        margin-bottom: 5px;
-        margin-left: 10px;
-        margin-right: 10px;
-        display: block;
-    }
-    .carousel-inner .carousel-item{
-        height: 600px;
+.card-img{
+    width: 30px;
+        height: 30px;
+        float: right;
+}
+.card-body{
+    padding-top: 10px;
+    padding-bottom: 10px;
 
-    }
-    #subject1{
-    margin-top: 40px;
-    
-    }
-    #subject2-row1{
-    margin: 10px;
-    
-    }
-    #subject2-row2{
-        margin:10px;
-    }
-    #subject3-row1{
-        margin: 10px;
-    }
-    #subject3-row1{
-        margin-top: 10px;
-    }
-    .divsize2{
-        height:80px;
-    }
-    .divsize3{
-        height: 45px;
-    }
-}*/
+}
+
 .card{
     margin-bottom: 40px;
-    border-color: rgb(45, 156, 194);
+    border: 0.5px solid #ccc;
+    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.5);
 
 }
 .card-title{
     font-size: 16px;
 }
+.subject1padding{
+    margin-bottom: 55px;
+}
+.subject2padding{
+    margin-bottom: 55px;
+}
+.subject3padding{
+    margin-bottom: 55px;
+}
+
 @media only screen and (max-width:432px){
     .card{
         margin: 20px;
