@@ -73,8 +73,7 @@
     border-radius: 22px;
     border: 0.5px solid #ccc;
     padding:5px;
-    
-box-shadow: 1.5px 1.5px 1px 1px rgba(107,104,107,1);
+    box-shadow: 1.5px 1.5px 3px 1px rgb(128 128 128 / 46%);
 }
 
 #subject1-row1{
@@ -260,8 +259,8 @@ box-shadow: 1.5px 1.5px 1px 1px rgba(107,104,107,1);
 
 .card-img{
     width: 30px;
-        height: 30px;
-        float: right;
+    height: 30px;
+    float: right;
 }
 .card-body{
     padding-top: 10px;
@@ -273,11 +272,15 @@ box-shadow: 1.5px 1.5px 1px 1px rgba(107,104,107,1);
     margin-bottom: 50px;
     min-height: 70px;
     border: 0.5px solid #ccc;
-    box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.5);
+    box-shadow: 2px 3px 3px 2px rgb(148 149 148 / 48%);
 
 }
 .card-title{
     font-size: 16px;
+}
+.card a{
+    text-decoration: none;
+    color: black;
 }
 .subject1padding{
     margin-bottom: 55px;
@@ -306,10 +309,11 @@ box-shadow: 1.5px 1.5px 1px 1px rgba(107,104,107,1);
         margin: 15px;
         padding:10px;   
     }
+    .demoFont{
+        font-size: 23px;
+    }
     #carouselExampleIndicators {
-   
-  
-    height: auto;
-}
+        height: auto;
+    }
 }
 
