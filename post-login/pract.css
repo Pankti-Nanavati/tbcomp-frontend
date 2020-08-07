@@ -15,7 +15,6 @@
   .navbar {
     background-color: rgb(0, 0, 0);
     opacity: 0.88;
-    box-shadow: 0px 1px 50px #999;
     padding-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -143,7 +142,7 @@
     border-color: black; 
     border-style: solid;
     border-width: 1px;
-    height: 550px;
+    height: 530px;
 }
    
 .carousel-inner .carousel-item {
@@ -272,7 +271,7 @@
     margin-bottom: 50px;
     min-height: 70px;
     border: 0.5px solid #ccc;
-    box-shadow: 2px 3px 3px 2px rgb(148 149 148 / 48%);
+    box-shadow: 2px 2px 1px 1px rgb(148 149 148 / 35%);
 
 }
 .card-title{
