@@ -163,7 +163,7 @@ box-shadow: 1.5px 1.5px 1px 1px rgba(107,104,107,1);
 /*button start*/
        
  #btn1 {
-     background-color:#2d9cc2;
+    background-color:#2d9cc2;
     border: none;
     color: white;
     padding-bottom: 0.2%;
@@ -192,6 +192,10 @@ box-shadow: 1.5px 1.5px 1px 1px rgba(107,104,107,1);
 } 
         
 #btn2 {
+    background-image: url(icon1.png);
+    background-size: 1em 1.6em;
+    background-repeat: no-repeat; 
+    background-position: center;
     background-color:white;   
     padding-bottom: 0.2%;      
     border: none;         
@@ -221,6 +225,10 @@ box-shadow: 1.5px 1.5px 1px 1px rgba(107,104,107,1);
     } 
 
 #btn3 {
+    background-image: url(icon1.png);
+    background-size: 1em 1.6em;
+    background-repeat: no-repeat; 
+    background-position: center;
     background-color:white;
     border: none;
     color: black;
