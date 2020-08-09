@@ -185,7 +185,7 @@
 } 
         
 #btn2 {
-    background-image: url(icon2.png);
+    background-image: url(BECIcon.png);
     background-size: 2.1em 3.1em;
     background-repeat: no-repeat; 
     background-position: center;
@@ -211,6 +211,7 @@
     border-color: #2d9cc2;
     cursor: pointer;  
     transition: 0.2s all; 
+    background-size: 30px 25px !important;
 }
 
 #btn2:active { 
@@ -218,7 +219,7 @@
     } 
 
 #btn3 {
-    background-image: url(icon3.png);
+    background-image: url(ECADIcon.png);
     background-size: 1em 1.4em;
     background-repeat: no-repeat; 
     background-position: center;
@@ -286,18 +287,37 @@
 .subject3padding{
     margin-bottom: 55px;
 }
-#BJT-Amplifier{
+.resize-img img{
   width: 40px;
+  height: 40px;
 }
-#FET-Amplifier{
-  width: 45px;
-  
+#dc-circuit{
+  width: 40px;
+  height: 35px;
 }
-#Multi-transistor{
-  width: 40px; 
+#ac-circuit{
+  width: 40px;
+  height: 35px;
 }
-#Power-Amplifier{
-  width: 35px;
+#Diode-App{
+  width: 25px;
+  height: 35px;
+  margin-right: 2px;
+}
+#Single-Stage-Design{
+  height:40px;
+}
+#Darlington-Amplifier{
+  width: 25px;
+  height: 23px;
+}
+#Cascade-Amplifier{
+  width: 25px;
+  height: 25px;
+}
+#Oscillator-Amplifier{
+  width: 25px;
+  height: 25px;
 }
 #Differential-Amplifier{
   width: 35px;
@@ -327,6 +347,10 @@
     #carouselExampleIndicators {
         height: auto;
     }
+    #Single-Stage-Design{
+      height:22px;
+      
+    }
 }
 
   .page3{
@@ -342,7 +366,7 @@
     width: auto;
     padding-top: 30px;
     padding-bottom: 20px;
-    margin-top: 650px;
+    margin-top: 680px;
   }
 
 /*footer css*/
@@ -352,7 +376,7 @@
     width: auto;
     padding-top: 30px;
     padding-bottom: 20px;
-    margin-top: 450px;
+    margin-top: 470px;
   }
   
   @media screen and (max-width: 600px) {
