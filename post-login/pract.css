@@ -367,6 +367,7 @@
     text-align: left;
     float: left;
     color: white;
+  padding: 10px;
   }
   
   .column .side .bb .a:hover {
