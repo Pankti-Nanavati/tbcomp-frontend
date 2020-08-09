@@ -24,8 +24,7 @@
       btn2.style.width="4em";
       btn3.style.width="4em";
       btn1.innerHTML = "EEEE";
-     
-     
+        
 }
 function myFunction2() {
       var btn1 = document.getElementById("btn1");
@@ -52,6 +51,12 @@ function myFunction2() {
       btn3.style.backgroundColor="white";
       btn2.style.backgroundImage="none";
       btn2.innerHTML = "BEC";
+      if (window.matchMedia("(max-width: 432px)").matches) { // If media query matches
+      footer.className="page2";
+      } 
+      else{
+            footer.className="footer";
+      }
      
 }
 function myFunction3() {
@@ -79,5 +84,10 @@ function myFunction3() {
       btn2.style.width="4em";
       btn1.style.width="4em";
       btn3.innerHTML = "ECAD";
-     
+     if (window.matchMedia("(max-width: 432px)").matches) { // If media query matches
+      footer.className="page3";
+  } 
+  else{
+            footer.className="footer";
+      }
 }

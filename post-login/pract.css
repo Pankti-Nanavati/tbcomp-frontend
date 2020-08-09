@@ -329,6 +329,22 @@
     }
 }
 
+  .page3{
+    background-color: black;
+    width: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 1020px;
+  }
+
+  .page2{
+    background-color: black;
+    width: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 650px;
+  }
+
 /*footer css*/
 
 .footer {
