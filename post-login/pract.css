@@ -286,6 +286,22 @@
 .subject3padding{
     margin-bottom: 55px;
 }
+#BJT-Amplifier{
+  width: 40px;
+}
+#FET-Amplifier{
+  width: 45px;
+  
+}
+#Multi-transistor{
+  width: 40px; 
+}
+#Power-Amplifier{
+  width: 35px;
+}
+#Differential-Amplifier{
+  width: 35px;
+}
 
 @media only screen and (max-width:432px){
     .card{
