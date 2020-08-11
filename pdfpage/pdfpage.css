@@ -73,10 +73,9 @@
 }
    
 .main{
-  margin-top: 100px;
-  margin-left: 240px;
-
+ margin-top: 100px;
 }
+
 
 
 
@@ -95,3 +94,37 @@
     .main{
       margin-left: 0px;
     }
+  }
+/*Activity*/
+    .cont1 {
+      background-color: white;
+      padding: 10px;
+      border-color: #A9A9A9;
+      border-width: 1px;
+      border-style: solid;
+      
+  }
+  
+ 
+  .activity {
+      padding: 20px;
+  }
+
+  .card1 {
+    background-color: white;
+    padding: 10px;
+    border-color: #A9A9A9;
+    border-width: 1px;
+    border-style: solid;
+    
+  }
+  .card1:hover {
+    -webkit-box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
+-moz-box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
+box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+  /*Activity ends*/
