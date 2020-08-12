@@ -74,6 +74,11 @@
    
 .main{
  margin-top: 100px;
+ margin-left: 200px;
+}
+
+.margin1{
+  margin-left: 40px;
 }
 
 
@@ -103,7 +108,8 @@
       border-color: #A9A9A9;
       border-width: 1px;
       border-style: solid;
-      margin-left: 137px;
+      margin-left: 200px;
+      margin-right: 200px;
       border-radius: 10px;
   }
   @media only screen and (max-width:432px){
