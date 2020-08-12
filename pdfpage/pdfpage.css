@@ -123,25 +123,41 @@
   .activity {
       padding: 5px;
       align-items: center;
+      align-content: center;
+     
   }
 
 .card1 {
   align-items: center;
   border: none;
 }
-.card2 {
+#btn2 {
   border-style: solid;
   border-color:#2d9cc2;
   border-width: 1px;
   background-color: #2d9cc2;
-  height: 5em;
-  width: 15em;
-  margin-top: 16px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: medium;
+  color: white;
+  width: auto;
+  height: auto;
+  padding-top: 12px;
+  padding-left: 10px;
+  position: center;
   align-self: center;
-  margin-left: 4em;
+  margin-top: 1.5em;
 }
 
-.card2:hover {
+
+@media only screen and (max-width:432px){
+  #btn2{
+    margin-top: 0px;
+  }
+  
+
+}
+#btn2:hover {
   -webkit-box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
 -moz-box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
 box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
