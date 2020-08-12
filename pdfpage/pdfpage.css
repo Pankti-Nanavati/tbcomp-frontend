@@ -98,36 +98,71 @@
 /*Activity*/
     .cont1 {
       background-color: white;
-      padding: 10px;
+     padding-top: 10px;
+     padding-bottom: 10px;
       border-color: #A9A9A9;
       border-width: 1px;
       border-style: solid;
-      
+      margin-left: 137px;
+      border-radius: 10px;
   }
-  
+  @media only screen and (max-width:432px){
+    .cont1{
+      margin-left: 0px;
+    }
+    
+ 
+  }
  
   .activity {
-      padding: 20px;
+      padding: 5px;
+      align-items: center;
   }
 
-  .card1 {
-    background-color: white;
-    padding: 10px;
-    border-color: #A9A9A9;
-    border-width: 1px;
-    border-style: solid;
-    
-  }
-  .card1:hover {
-    -webkit-box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
+.card1 {
+  align-items: center;
+  border: none;
+}
+.card2 {
+  border-style: solid;
+  border-color:#2d9cc2;
+  border-width: 1px;
+  background-color: #2d9cc2;
+  height: 5em;
+  width: 15em;
+  margin-top: 16px;
+  align-self: center;
+  margin-left: 4em;
+}
+
+.card2:hover {
+  -webkit-box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
 -moz-box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
 box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
-  }
+}
 
   a:hover {
     text-decoration: none;
   }
+#btn1 {
+  background-color: #A9A9A9;
+  padding: 5px;
+  border-width: 1px;
+  border-style: solid;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 125px;
+  height: 35px;
+ 
+}
+  #btn1:hover {
+    -webkit-box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
+-moz-box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
+box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
+background-color:  #2d9cc2;
+  }
   /*Activity ends*/
+
   .file-upload {
     background-color: #ffffff;
     margin: 0 auto;
