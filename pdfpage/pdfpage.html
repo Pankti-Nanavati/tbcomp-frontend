@@ -111,13 +111,13 @@
               <!--<button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
               -->
               <div class="image-upload-wrap">
-                <input class="file-upload-input" type='file' onchange="readURL(this);" accept="application/txt.application/pdf,application/doc" />
+                <input class="file-upload-input" id="file-upload-input" type='file' onchange="readURL(this);checkFileUpload();"  accept="application/txt.application/pdf,application/doc" />
                 <div class="drag-text">
                   <div class="upload-icon mt-4">
                     <i class="fa fa-cloud-upload"></i>
                   </div>
                   
-                  <h6>Drag and drop your file or <span>Browse</span></h6>
+                  <h6>Drag and drop your file or Click to Browse</h6>
                 </div>
               </div>
               <div class="file-upload-content">
@@ -132,15 +132,25 @@
                         <span class="image-title">Uploaded Image</span>
                       </div>
                       <div class="col-4 image-title-wrap m-auto">
-                        <button type="button" onclick="removeUpload()" class="remove-image"><i class="fa fa-trash"></i></button>
+                        <button type="button" onclick="removeUpload()" class="remove-image"><i class="fa fa-times"></i></button>
                       </div>
                     </div> 
                   </div>
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
+        <div class="row status-section">
+          <div class="col-4 status-text">
+            <h6>Status: </h6>
+          </div>
+          <div class="col-8 status-badge">
+            <span class="badge badge-pill badge-danger" id="status-danger-badge">No file attached</span>
+          </div>
+        </div>
+        
         
        </div>
     <!-- upload setion ends-->
