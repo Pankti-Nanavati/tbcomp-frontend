@@ -63,13 +63,10 @@
 /*navbar ends*/
 
 
-
+/*1st row topic*/
 .card-img{
-
-  
     width: 80px;
     height: 80px;
-
 }
    
 .main{
@@ -80,8 +77,20 @@
 .margin1{
   margin-left: 40px;
 }
-
-
+.divi{
+  position: relative;
+  
+}
+.card-img{
+  float:left;
+}
+.card-title{
+  font-size: 18px;
+  color: black;
+}
+.topicname{
+  padding-top: 20px;
+}
 
 
 
@@ -99,7 +108,14 @@
     .main{
       margin-left: 0px;
     }
+    .topicname{
+      padding-top: 5px;
+    }
   }
+/*1st row topic ends*/
+
+
+
 /*Activity*/
     .cont1 {
       background-color: white;
