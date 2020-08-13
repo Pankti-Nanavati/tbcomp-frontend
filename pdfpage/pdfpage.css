@@ -129,6 +129,12 @@
       border-radius: 10px;
       box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   }
+  .cont1:hover {
+
+    -webkit-box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
+-moz-box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
+box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
+  }
   @media only screen and (max-width:432px){
     .cont1{
       margin-left: 0px;
@@ -145,6 +151,7 @@
 .card1 {
   align-items: center;
   border: none;
+  padding-top: 2em;
 }
 #btn2 {
   border-style: solid;
@@ -161,7 +168,7 @@
   padding-left: 10px;
   position: center;
   align-self: center;
-  margin-top: 1.5em;
+  margin-top: 5em;
 }
 
 
@@ -169,7 +176,9 @@
   #btn2{
     margin-top: 0px;
   }
-  
+  .card1 {
+    padding-top: 0px;
+  }
 
 }
 #btn2:hover {
