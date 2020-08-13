@@ -333,8 +333,8 @@ background-color:  #2d9cc2;
   }
   
   .remove-image:hover {
-    background: #c13b2a;
-    color: #ffffff;
+    color: black;
+    background: #DCDCDC;
     transition: all .2s ease;
     cursor: pointer;
   }
@@ -359,11 +359,11 @@ background-color:  #2d9cc2;
   @media only screen and (max-width:432px){
     .status-text h6{
       font-size: 20px;
-      margin-top: 20px;
+      margin-top: 0px;
     }
     .status-badge .badge{
       font-size: 16px;
-      margin-top: 20px;
+      margin-top: 0px;
     }
   }
 
