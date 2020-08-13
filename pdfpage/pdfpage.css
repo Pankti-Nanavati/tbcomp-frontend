@@ -280,7 +280,7 @@ background-color:  #2d9cc2;
   }
   .image-title{
     font-weight: 600;
-    font-size: 25px;
+    font-size: 14px;
   }
   .drag-text {
     text-align: center;
@@ -288,6 +288,7 @@ background-color:  #2d9cc2;
   
   .drag-text h6 {
     font-weight: 100;
+    font-size: 14px;
     text-transform: uppercase;
     color: black;
     padding: 30px 30px 30px 10px;
@@ -347,13 +348,13 @@ background-color:  #2d9cc2;
     margin:30px 20px 20px 20px;
   }
   .status-text h6{
-    font-size: 25px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 550;
   }
   .status-badge .badge{
-
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 2px;
+    box-shadow: 5px 5px 5px -4px #000000;
   }
   @media only screen and (max-width:432px){
     .status-text h6{
@@ -361,7 +362,7 @@ background-color:  #2d9cc2;
       margin-top: 20px;
     }
     .status-badge .badge{
-      font-size: 20px;
+      font-size: 16px;
       margin-top: 20px;
     }
   }
