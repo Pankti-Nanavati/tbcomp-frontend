@@ -71,7 +71,7 @@
    
 .main{
  margin-top: 100px;
- margin-left: 200px;
+ /*margin-left: 200px;*/
 }
 
 .margin1{
@@ -91,7 +91,6 @@
 .topicname{
   padding-top: 20px;
 }
-
 
 
 @media only screen and (max-width:432px){
@@ -124,8 +123,8 @@
       border-color: #A9A9A9;
       border-width: 1px;
       border-style: solid;
-      margin-left: 200px;
-      margin-right: 200px;
+      /*margin-left: 200px;
+      margin-right: 200px;*/
       border-radius: 10px;
       box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   }
@@ -179,6 +178,12 @@ box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
   .card1 {
     padding-top: 0px;
   }
+ 
+  .pankti{
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
 
 }
 #btn2:hover {
@@ -345,9 +350,9 @@ background-color:  #2d9cc2;
   }
   .status-section{
     
-    margin:30px 20px 20px 20px;
+    margin:25px 20px 20px 20px;
   }
-  .status-text h6{
+  .status-text h8{
     font-size: 22px;
     font-weight: 550;
   }
@@ -356,8 +361,20 @@ background-color:  #2d9cc2;
     margin-top: 2px;
     box-shadow: 5px 5px 5px -4px #000000;
   }
+  @media only screen and (max-width:960px){
+    .status-section{
+      margin-top: 80px;
+    }
+    .status-text h8{
+      font-size: 15px;
+      margin-top: 0px;
+    }
+    .status-badge .badge {
+      font-size: 15px;
+    }
+  }
   @media only screen and (max-width:432px){
-    .status-text h6{
+    .status-text h8{
       font-size: 20px;
       margin-top: 0px;
     }
@@ -365,10 +382,23 @@ background-color:  #2d9cc2;
       font-size: 16px;
       margin-top: 0px;
     }
+    .status-section{
+      margin-top: 20px;
+    }
   }
 
   @media only screen and (min-width:432px){
     .file-doc-icon .fa-file{
       font-size: 40px;
     }
+  }
+
+@media only screen and (max-width:720px){
+    .status-section{
+      margin-top: 50px;
+    }
+    .status-text{
+      height: 10px;
+    }
+
   }
