@@ -173,7 +173,7 @@ box-shadow: 1px 2px 13px 10px rgba(0,0,0,0.14);
 
 @media only screen and (max-width:432px){
   #btn2{
-    margin-top: 0px;
+    margin-top: 2em;
   }
   .card1 {
     padding-top: 0px;
@@ -364,6 +364,7 @@ background-color:  #2d9cc2;
   @media only screen and (max-width:960px){
     .status-section{
       margin-top: 80px;
+      
     }
     .status-text h8{
       font-size: 15px;
@@ -391,14 +392,17 @@ background-color:  #2d9cc2;
     .file-doc-icon .fa-file{
       font-size: 40px;
     }
+    
   }
 
 @media only screen and (max-width:720px){
     .status-section{
-      margin-top: 50px;
+      margin-top: 1.5em;
     }
     .status-text{
       height: 10px;
     }
-
+    .file-upload {
+      margin-top: 2em;
+    }
   }
