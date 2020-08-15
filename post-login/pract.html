@@ -12,10 +12,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="pract.css">
   
-
-<!----JS template-----> 
-   <script type="text/javascript" src="postlogin.js"></script>
-
    <style>
        .demoFont {
     font-family: "Times New Roman", Times, serif;
@@ -52,7 +48,7 @@
         
           <ul class="navbar-nav ml-auto"> 
             <li class="nav-item underlinehover "> 
-                  <a class="nav-link " href="..\login\login.html">Profile <span class="fa fa-user"></span></a>    
+                  <a class="nav-link " href="..\login\login.html" id="btnLogin" data-toggle="modal" data-target="#profileModal">Profile <span class="fa fa-user"></span></a>    
                 </li> 
                 <li class="nav-item underlinehover "> 
                   <a class="nav-link " href="..\login\login.html">Logout<span class="fa fa-sign-in"></span></a>    
@@ -64,7 +60,65 @@
 <br><br>
 
     <div class="container">
-
+        <div class="modal fade show"  data-easein="slideDownIn" id="profileModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-profile modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Profile</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-danger" role="alert" id="email-nochange-alert">
+                        You cannot edit this field.
+                    </div>
+                    <div class="form-group" id="email-input-div">
+                        
+                        <label for="emailId">Email</label>
+                        <input  type="email "class="form-control" value="abc@gmail.com"placeholder="Email" name="emailId" id="emailId" readonly>
+                        
+                    </div>
+                  <form class="profileForm" onsubmit="return profileValidation()">
+                    <div class="form-group">
+                        
+                        <label for="emailId">Name of College/University</label>
+                        <input type="text"  class="form-control" placeholder="Name of College/University" name="collegeName" required>
+                       
+                        <div class="form-group">
+                            <small id="collegeNameAlert" class="form-text"></small>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="yearOfStudy">
+                            Year of Study
+                        </label><br>	
+                        <select class="year-select md-form" id="yearOfStudy" name="yearOfStudy" type="text">
+                            <option value="none" selected disabled hidden>Year Of Study</option>
+                            <option name="year" value="FY">FY</option>
+                            <option name="year" value="SY">SY</option>
+                            <option name="year" value="TY">TY</option>
+                            <option name="year" value="LY">LY</option>
+                        </select>
+                        <div class="form-group">
+                            <small id="studyYearAlert" class="form-text"></small>
+                        </div>
+                    </div>
+                    <div class="border border-bottom border-light mt-2 mb-2"></div>
+                    <div class="modal-footer-btn">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                    
+                  </form>
+                </div>
+                
+                 
+                
+              </div>
+            </div>
+          </div>
+        
         <div class="row row1">
             <div class="column col-xl-12 col-md-12 col-sm-12 column1 ">
                 <ol class="carousel-indicators">
@@ -466,6 +520,18 @@
         </div>
     </div>
     <!--footer-->
-
+    <script>
+        
+        $("#email-input-div").focusin(function() {
+        $("#email-nochange-alert").show();
+        });
+        $("#email-input-div").focusout(function() {
+        $("#email-nochange-alert").hide();
+        });
+    </script>
+    <!----JS template-----> 
+   <script type="text/javascript" src="postlogin.js"></script>
+   
+   
 </body>
 </html>
