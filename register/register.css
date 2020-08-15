@@ -201,7 +201,7 @@ select{
 	text-align: center;
 	background: none;
 	border-bottom: 1px solid #ced4da;
-	padding-bottom: 10px;
+	padding-bottom: 11px;
 }
 
 #message {
@@ -211,6 +211,21 @@ select{
 #message p {
 	padding: 5px;
 } 
+#collegeNameAlert{
+	color:red;
+}
+#confPasswordAlert{
+	color:red;
+}
+#studyYearAlert{
+	color:red;
+}
+.input-group-addon .fa-building{
+	font-size: 20px;
+}
+#fullNameAlert{
+	color:red;
+}
 /* Register form ends*/
 
 /*Security Question section Starts*/
@@ -258,15 +273,6 @@ select{
 #blank-alert-message{
     display: none;
 }
-#collegeNameAlert{
-	color:red;
-}
-#confPasswordAlert{
-	color:red;
-}
-#studyYearAlert{
-	color:red;
-}
 .reset-button{
 	margin: 5px;  
 	padding: 3.5px 25px ;
@@ -297,5 +303,5 @@ select{
 		justify-content: center;
 		align-items: center;
 	  }
-}	
+}
 /*Security Question form Ends*/  

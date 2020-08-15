@@ -1,4 +1,7 @@
  function RegisterValidation(){
+    var fullName = document.forms["RegisterForm"]["fullName"].value;
+    var namePattern = /^[a-zA-Z]+$/;
+
     var email=document.forms["RegisterForm"]["emailId"].value;
     var email_patt=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
@@ -10,7 +13,16 @@
     var confirm_pass=document.forms["RegisterForm"]["confirmPassword"].value;
     
     var studyYear=document.getElementById('yearOfStudy').value;
-    
+
+    if (namePattern.test(fullName) == false){
+        document.getElementById('fullNameAlert').innerHTML=" **Please enter valid Name"
+		return false;
+    }
+    else{
+        document.getElementById('fullNameAlert').innerHTML='';
+        document.getElementById('fullNameAlert').style.display = 'none';
+    }
+
     if(email_patt.test(email) == false )
 	{
         document.getElementById('emailAlert').innerHTML=" **Please enter valid Email"

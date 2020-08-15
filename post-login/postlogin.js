@@ -91,32 +91,3 @@ function myFunction3() {
             footer.className="footer";
       }
 }
-
-function profileValidation(){
-      var clg_name = document.getElementById("collegeName").value;
-      alert(clg_name);
-      var userPattern = /^[a-zA-Z]+$/;
-      var studyYear=document.getElementById('yearOfStudy').value;
-
-      if((userPattern.test(clg_name)==false))
-    {
-        document.getElementById('collegeNameAlert').innerHTML=" **Please enter a valid College/University name";
-        return false;
-    }
-    else
-    {
-        document.getElementById('collegeNameAlert').innerHTML = '';
-        document.getElementById('collegeNameAlert').style.display = 'none';
-    }
-    if(studyYear == 'none')
-    {
-        document.getElementById('studyYearAlert').innerHTML=" **Please select a option";
-        return false;   
-    }
-    else{
-        document.getElementById('studyYearAlert').innerHTML = '';
-        document.getElementById('studyYearAlert').style.display = 'none';
-    }
-}
-
-
