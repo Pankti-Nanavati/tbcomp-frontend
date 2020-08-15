@@ -144,7 +144,7 @@
     margin-left: 50px;
     margin-right: 50px;
     padding-top: 5px;
-    padding-bottom: 0px;
+    padding-bottom: 3px;
   }
   .heading {
     font-size: 28px;
@@ -401,6 +401,9 @@ a:hover {
   .status-badge .badge {
     font-size: 13px;
   }
+  .topicname{
+    padding-right: 85px;
+  }
 }
 
 @media only screen and (max-width:920px) {
@@ -419,6 +422,7 @@ a:hover {
   .divrow1 {
     margin-left: 0px;
   }
+
 }
 
 @media only screen and (max-width:750px) {
