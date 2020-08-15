@@ -95,7 +95,17 @@
   color: black;
 }
 .topicname{
-  padding-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-left: 80px;
+  background-color: #D3D3D3;;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
 }
 .divrow1{
   margin-left: 30px;
@@ -117,7 +127,11 @@
       margin-left: 0px;
     }
     .topicname{
+      margin-top: 5px;
+      margin-left: 50px;
+      margin-right: 50px;
       padding-top: 5px;
+      padding-bottom: 0px;
     }
     .heading{
       font-size: 28px;
