@@ -90,13 +90,53 @@
   }
   }
  
-  .carousel-control-prev {
-    right:0;
-    margin-right: 0;
+  .carousel-control-prev{
+    color: black; 
+    left: -1.5em;
+   
   }
+  .carousel-control-prev:hover {
+    color: black;
+  }
+.carousel-control-next{  
+  color: black; 
+  right: -1.5em;
+  
+}
+.carousel-control-next:hover {
+  color: black;
+}
+@media only screen and (max-width:432px) {
+  .carousel-control-prev{
+    color: black; 
+    left: -0.8em;
+   
+  }
+  .carousel-control-next{
+    color: black; 
+    right: -0.8em;
+   
+  }
+}
 
   .carousel {
     border-style: solid;
     border-color: black;
     border-width: 1px;
+    width:auto;
   }
+
+  .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    color:black;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    background-color: black;
+}
+.carousel-indicators {
+    bottom: -50px;
+     
+}
