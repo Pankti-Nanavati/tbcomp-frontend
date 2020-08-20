@@ -1,4 +1,4 @@
-function readURL1(input) {
+/*function readURL1(input) {
     if (input.files && input.files[0]) {
       alert('hello');
       var reader = new FileReader();
@@ -110,7 +110,7 @@ $('#wrap3').bind('dragover', function () {
 });
 $('#wrap3').bind('dragleave', function () {
   $('#wrap3').removeClass('image-dropping');
-});
+});*/
   /*
   $('input[type="file"]').change(function(){ 
     console.log($(this).length);
