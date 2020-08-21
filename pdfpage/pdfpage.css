@@ -242,7 +242,7 @@ a:hover {
 
 
 /*Activity ends*/
-
+/*File Upload Begin*/
 .file-upload {
   background-color: #ffffff;
   margin: 0 auto;
@@ -276,13 +276,13 @@ a:hover {
   border: 0;
   transition: all .2s ease;
 }
-
-.file-upload-content {
+.file-upload-content1,.file-upload-content2,.file-upload-content3 {
   display: none;
   text-align: center;
+  position: relative;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-
-.file-upload-input {
+.file-upload-input1,.file-upload-input2,.file-upload-input3 {
   position: absolute;
   margin: 0;
   padding: 0;
@@ -293,12 +293,20 @@ a:hover {
   cursor: pointer;
 }
 
-.image-upload-wrap {
+.image-upload-wrap1,.image-upload-wrap2,.image-upload-wrap3 {
   position: relative;
   outline: 2px dashed #b6b6b6;
 }
 
-.image-dropping, .image-upload-wrap:hover {
+.image-dropping, .image-upload-wrap1:hover {
+  background-color: #E8E8E8;
+}
+
+.image-dropping, .image-upload-wrap2:hover {
+  background-color: #E8E8E8;
+}
+
+.image-dropping, .image-upload-wrap3:hover {
   background-color: #E8E8E8;
 }
 
@@ -307,9 +315,10 @@ a:hover {
   color: #222;
 }
 
-.image-title {
+.image-title1,.image-title2 ,.image-title3 {
   font-weight: 600;
   font-size: 14px;
+  color: #000000;
 }
 
 .drag-text {
@@ -343,13 +352,9 @@ a:hover {
   padding: 20px;
 }
 
-.file-upload-content {
-  position: relative;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-
 .file-doc-icon .fa-file {
   font-size: 30px;
+  color: black;
 }
 
 .remove-image {
@@ -379,9 +384,10 @@ a:hover {
   margin: 35px 20px 20px 20px;
 }
 
-.status-text h8 {
+.status-text{
   font-size: 20px;
   font-weight: 550;
+  color: black;
 }
 
 .status-badge .badge {
@@ -459,7 +465,7 @@ a:hover {
   }
   
 }
-
+/*File Upload Ends*/
 /*footer css*/
 
 .footer {

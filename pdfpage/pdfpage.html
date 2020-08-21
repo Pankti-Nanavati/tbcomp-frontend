@@ -142,14 +142,13 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="file-upload">
-                                        <!--<button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
-              -->
-                                        <div class="image-upload-wrap">
+                                        
+                                        <div class="image-upload-wrap1" id="wrap1">
                                             <input
-                                                class="file-upload-input"
-                                                id="file-upload-input"
+                                                class="file-upload-input1"
+                                                id="file-upload-input-doc1"
                                                 type="file"
-                                                onchange="readURL(this);checkFileUpload();"
+                                                onchange="readURL1(this);checkFileUploadDoc1();"
                                                 accept="application/txt.application/pdf,application/doc"
                                             >
                                             <div class="drag-text">
@@ -159,8 +158,7 @@
                                                 <h6 class="dragdrop">Drag and drop your file or Click to Browse</h6>
                                             </div>
                                         </div>
-                                        <div class="file-upload-content">
-                                            <!--<img class="file-upload-image" src="#" alt="your image" />-->
+                                        <div class="file-upload-content1" id="file-content1">
                                             <div class="row no-gutters">
                                                 <div class="col-3 file-doc-icon m-auto">
                                                     <i class="fa fa-file"></i>
@@ -168,10 +166,10 @@
                                                 <div class="col-9">
                                                     <div class="row file-name-section">
                                                         <div class="col-8  m-auto">
-                                                            <span class="image-title">Uploaded Image</span>
+                                                            <span class="image-title1" id="imgtitle1">Uploaded Image</span>
                                                         </div>
                                                         <div class="col-4 image-title-wrap m-auto">
-                                                            <button type="button" onclick="removeUpload()" class="remove-image">
+                                                            <button type="button" onclick="removeUpload1()" class="remove-image">
                                                                 <i class="fa fa-times"></i>
                                                             </button>
                                                         </div>
@@ -187,7 +185,7 @@
                                     Status:
                                 </div>
                                 <div class="col-8 status-badge">
-                                    <span class="badge badge-pill badge-danger" id="status-danger-badge">No File Attached</span>
+                                    <span class="badge badge-pill badge-danger" id="status-danger-badge1">No File Attached</span>
                                 </div>
                             </div>
                         </div>
@@ -264,14 +262,13 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="file-upload">
-                                        <!--<button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
-              -->
-                                        <div class="image-upload-wrap">
+                                        
+                                        <div class="image-upload-wrap2" id="wrap2">
                                             <input
-                                                class="file-upload-input"
-                                                id="file-upload-input"
+                                                class="file-upload-input2"
+                                                id="file-upload-input-doc2"
                                                 type="file"
-                                                onchange="readURL(this);checkFileUpload();"
+                                                onchange="readURL2(this);checkFileUploadDoc2();"
                                                 accept="application/txt.application/pdf,application/doc"
                                             >
                                             <div class="drag-text">
@@ -281,8 +278,7 @@
                                                 <h6 class="dragdrop">Drag and drop your file or Click to Browse</h6>
                                             </div>
                                         </div>
-                                        <div class="file-upload-content">
-                                            <!--<img class="file-upload-image" src="#" alt="your image" />-->
+                                        <div class="file-upload-content2" id="file-content2">
                                             <div class="row no-gutters">
                                                 <div class="col-3 file-doc-icon m-auto">
                                                     <i class="fa fa-file"></i>
@@ -290,10 +286,10 @@
                                                 <div class="col-9">
                                                     <div class="row file-name-section">
                                                         <div class="col-8  m-auto">
-                                                            <span class="image-title">Uploaded Image</span>
+                                                            <span class="image-title2" id="imgtitle2">Uploaded Image</span>
                                                         </div>
                                                         <div class="col-4 image-title-wrap m-auto">
-                                                            <button type="button" onclick="removeUpload()" class="remove-image">
+                                                            <button type="button" onclick="removeUpload2()" class="remove-image">
                                                                 <i class="fa fa-times"></i>
                                                             </button>
                                                         </div>
@@ -309,7 +305,7 @@
                                     Status:
                                 </div>
                                 <div class="col-8 status-badge">
-                                    <span class="badge badge-pill badge-danger" id="status-danger-badge">No File Attached</span>
+                                    <span class="badge badge-pill badge-danger" id="status-danger-badge2">No File Attached</span>
                                 </div>
                             </div>
                         </div>
@@ -386,14 +382,13 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="file-upload">
-                                        <!--<button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
-              -->
-                                        <div class="image-upload-wrap">
+                                       
+                                        <div class="image-upload-wrap3" id="wrap3">
                                             <input
-                                                class="file-upload-input"
-                                                id="file-upload-input"
+                                                class="file-upload-input3"
+                                                id="file-upload-input-doc3"
                                                 type="file"
-                                                onchange="readURL(this);checkFileUpload();"
+                                                onchange="readURL3(this);checkFileUploadDoc3();"
                                                 accept="application/txt.application/pdf,application/doc"
                                             >
                                             <div class="drag-text">
@@ -403,7 +398,7 @@
                                                 <h6 class="dragdrop">Drag and drop your file or Click to Browse</h6>
                                             </div>
                                         </div>
-                                        <div class="file-upload-content">
+                                        <div class="file-upload-content3" id="file-content3">
                                             <!--<img class="file-upload-image" src="#" alt="your image" />-->
                                             <div class="row no-gutters">
                                                 <div class="col-3 file-doc-icon m-auto">
@@ -412,10 +407,10 @@
                                                 <div class="col-9">
                                                     <div class="row file-name-section">
                                                         <div class="col-8  m-auto">
-                                                            <span class="image-title">Uploaded Image</span>
+                                                            <span class="image-title3" id="imgtitle3">Uploaded Image</span>
                                                         </div>
                                                         <div class="col-4 image-title-wrap m-auto">
-                                                            <button type="button" onclick="removeUpload()" class="remove-image">
+                                                            <button type="button" onclick="removeUpload3()" class="remove-image">
                                                                 <i class="fa fa-times"></i>
                                                             </button>
                                                         </div>
@@ -431,7 +426,7 @@
                                     Status:
                                 </div>
                                 <div class="col-8 status-badge">
-                                    <span class="badge badge-pill badge-danger" id="status-danger-badge">No File Attached</span>
+                                    <span class="badge badge-pill badge-danger" id="status-danger-badge3">No File Attached</span>
                                 </div>
                             </div>
                         </div>
@@ -512,7 +507,9 @@
       <!--footer-->
   
     <!--Other JS-->
+   
     <script type="text/javascript" src="pdfpage.js"></script>
+    
     <!--Necessary Javascript-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
