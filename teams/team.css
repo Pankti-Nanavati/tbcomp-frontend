@@ -1,3 +1,6 @@
+.teamcontainer{
+  margin-top: 40px !important;
+}
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
@@ -20,8 +23,8 @@
 }
 .img1{
   width: 100%;
-  max-width: 400px;
-  height: auto;
+  max-width: 360px;
+  max-height: 180px;
 }
 .branch-name{
   color:white;
@@ -77,7 +80,7 @@
     .img1{
       width: 100%;
       max-width: 150px;
-      height: auto;
+      height: 150px;
   }
   .name {
     padding: 6px;
