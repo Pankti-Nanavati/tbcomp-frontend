@@ -1,3 +1,4 @@
+
 @media (max-width: 768px) {
     .carousel-inner .carousel-item > div {
         display: none;
@@ -14,16 +15,22 @@
 }
 
 /* display 3 */
+
 @media (min-width: 768px) {
     
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
       transform: translateX(33.333%);
+    
     }
     
     .carousel-inner .carousel-item-left.active, 
     .carousel-inner .carousel-item-prev {
       transform: translateX(-33.333%);
+      position: absolute;
+    
+      display: block;
+      visibility: visible;
     }
 }
 
@@ -32,3 +39,138 @@
   transform: translateX(0);
 }
 
+.main{
+  border:1px solid blue;
+  border-radius: 20px;
+  margin:10%;
+  height: auto;
+}
+.team-title{
+  color:Blue;
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+.teamcontainer h4{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+.teamcontainer {
+  margin-top: 40px !important;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+  margin: 0.5em;
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 35px;
+  padding: 2px;
+  color: white;
+}
+
+.name {
+  color: white;
+}
+
+.img1 {
+  width: 100%;
+  max-width: 360px;
+  max-height: 180px;
+}
+
+.branch-name {
+  color: white;
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 15%;
+  transition: .5s ease;
+  background: linear-gradient( to top, rgb(24, 24, 24), rgba(0, 0, 0, 0.3));
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.teamcard:hover .overlay {
+  height: 60%;
+}
+
+.link {
+  margin-top: 0px;
+}
+
+.link .fa {
+  font-size: 20px;
+  margin-top: 0cm;
+  padding-top: 0cm;
+}
+
+@media only screen and (max-width:432px) {
+  .link {
+   
+  }
+  .img1 {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+  }
+  .name h5 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width:760px) and (max-width: 1024px) {
+  .main{
+    margin:0;
+  }
+  .link {
+    padding-top: 45%;
+  }
+  .img1 {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+  }
+  .name {
+    padding: 6px;
+  }
+  .name h5 {
+    font-size: 15px;
+  }
+  .link .fa {
+    font-size: 16px;
+    margin: 5px;
+  }
+  .overlay {
+    bottom: 33px;
+  }
+
+  
+}
+@media only screen and (max-width:432px) {
+  .main{
+    margin:0px;
+  }
+ 
+  .card{
+    margin-left:40px ;
+  }
+}
