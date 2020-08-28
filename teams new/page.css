@@ -1,3 +1,132 @@
+/*navbar*/
+
+html, body {
+  overflow-x: hidden;
+}
+
+.navbar-nav>li {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 1.1em;
+}
+
+.navbar-brand {
+  padding-left: 20px;
+  padding-right: 30px;
+  margin-bottom: 0;
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.88;
+  box-shadow: 0px 1px 50px #999;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+}
+
+.ml-auto .nav-link {
+  margin-right: 20px;
+}
+
+.glypicon {
+  padding-left: 10px;
+}
+
+.nav-link:hover {
+  background-color: #1a1a1a;
+  font-size: 19px;
+}
+
+.active .nav-link {
+  border-bottom: 2px solid #2d9cc2;
+}
+
+.underlinehover {
+  display: inline-block;
+}
+
+.underlinehover:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.underlinehover:hover:after {
+  width: 100%;
+  background: #2d9cc2;
+}
+
+/*navbar ends*/
+
+
+/*About Sir*/
+.aboutheading{
+  margin-top: 40px;
+}
+.maindiv{
+  /*background-color: pink;*/
+  margin: auto;
+}
+.sirphoto{
+  
+  float: left;
+  height: 250px;
+  width: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.row1{
+  margin-top: 50px;
+  height: auto;
+}
+.sircontent{
+  margin-left: 100px;
+  margin-top: 10px;
+  border-width: 1px;
+  border-style: solid;
+  height: 320px;
+  width: 660px;
+  border-radius: 50px;
+  padding-left: 170px;
+  padding-right: 10px;
+  padding-top: 20px;
+  box-shadow: 3px 3px 5px 6px #ccc; 
+}
+.image1{
+  height: 250px;
+  width: 250px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width:1050px) {
+  .sirphoto {
+  float: none;
+  height: 250px;
+  width: 250px;
+  margin: auto;
+  }
+  .sircontent{
+  margin-left: 10px;
+  margin-right: 10px;
+  height: auto;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+}
+
+/*End About Sir*/
+
 
 @media (max-width: 768px) {
     .carousel-inner .carousel-item > div {
@@ -73,11 +202,12 @@
   margin-bottom: 15px;
 }
 
-a {
+.link a {
   text-decoration: none;
   font-size: 35px;
   padding: 2px;
   color: white;
+  padding-left: 10px;
 }
 
 .name {
