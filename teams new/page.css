@@ -304,3 +304,82 @@ html, body {
     margin-left:40px ;
   }
 }
+
+/*footer css*/
+
+.footer {
+  background-color: black;
+  width: auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.column {
+  float: left;
+  color: white;
+  text-align: left;
+}
+
+.column .side {
+  text-align: left;
+}
+
+.column .side .bb .a:hover {
+  text-decoration: none;
+}
+
+ul.bb {
+  list-style-type: none;
+  padding: 0;
+  color: white;
+  font-size: 14px;
+}
+
+/* .button  {
+  background-color:#2d9cc2;
+  border: none;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+} */
+
+.footer-btn {
+  background-color: #2d9cc2;
+  cursor: pointer;
+}
+
+.footer-btn:hover {
+  background-color: green;
+}
+
+.button1:active {
+  outline: none;
+  background-color: green;
+}
+
+.column .fa {
+  font-size: 18px;
+}
+
+.counter {
+  height: 30px;
+}
+
+/*footer css*/
