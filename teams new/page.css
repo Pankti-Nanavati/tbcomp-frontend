@@ -127,7 +127,7 @@ html, body {
 /*End About Sir*/
 
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     .carousel-inner .carousel-item > div {
         display: none;
     }
@@ -144,7 +144,7 @@ html, body {
 
 /* display 3 */
 
-@media (min-width: 768px) {
+@media (min-width: 760px) {
     
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
@@ -256,9 +256,7 @@ html, body {
 }
 
 @media only screen and (max-width:432px) {
-  .link {
-   
-  }
+
   .img1 {
     width: 100%;
     max-width: 180px;
@@ -283,19 +281,15 @@ html, body {
   }
   .name {
     padding: 6px;
-  }
-  .name h5 {
     font-size: 15px;
   }
-  .link .fa {
-    font-size: 16px;
-    margin: 5px;
+  .link {
+    padding-top: 0%;
   }
-  .overlay {
-    bottom: 33px;
-  }
+  .teamcard:hover .overlay {
+    height: 53%;
+}  
 
-  
 }
 @media only screen and (max-width:432px) {
   .main{
@@ -305,6 +299,31 @@ html, body {
   .card{
     margin-left:30px ;
     margin-right:30px ;
+  }
+}
+@media only screen and (min-width:450px) and (max-width: 759px) {
+  .card{
+    margin:auto ;
+  }
+}
+@media only screen and (min-width:770px) and (max-width: 1000px) {
+  .link {
+    padding-top: 0%;
+  }
+  .teamcard:hover .overlay {
+    height: 55%;
+}  
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 21%;
+    transition: .5s ease;
+    background: linear-gradient( to top, rgb(24, 24, 24), rgba(0, 0, 0, 0.3));
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 }
 
