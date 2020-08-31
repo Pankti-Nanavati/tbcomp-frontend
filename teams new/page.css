@@ -64,7 +64,21 @@ html, body {
 }
 
 /*navbar ends*/
-
+.timelinehead {
+    text-align:center;
+    display: grid;
+    grid-template-columns: 200px max-content 200px;
+    grid-template-rows: 20px 0;
+    grid-gap: 20px;
+    justify-content:center;
+    /*padding-top: 2em;*/
+    /*padding-bottom: 1.5em;*/
+    }
+    .timelinehead:after,.timelinehead:before {
+    content: " ";
+    display: block;
+    border-bottom: 1.5px solid #2d9cc2;
+}
 
 /*About Sir*/
 .aboutheading{
@@ -220,7 +234,7 @@ html, body {
 .img1 {
   width: 100%;
   max-width: 360px;
-  max-height: 180px;
+  height: 180px;
 }
 
 .branch-name {
@@ -264,6 +278,8 @@ html, body {
   .img1 {
     width: 100%;
     max-width: 180px;
+    max-height: 180px;
+    min-height: 180px;
     height: auto;
   }
   .name h5 {
