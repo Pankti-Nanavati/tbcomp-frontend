@@ -285,6 +285,9 @@ html, body {
   .name h5 {
     font-size: 20px;
   }
+  .timelinehead{
+    font-size: 27px;
+  }
 }
 
 @media only screen and (min-width:760px) and (max-width: 1024px) {
