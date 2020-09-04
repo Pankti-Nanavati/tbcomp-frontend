@@ -160,7 +160,9 @@ html, body {
 
 /*End About Sir*/
 
-
+.teamhead{
+  font-weight: 400;
+}
 @media (max-width: 760px) {
     .carousel-inner .carousel-item > div {
         display: none;
