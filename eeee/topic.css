@@ -259,4 +259,21 @@ ul.bb {
 }
 
 /*footer css*/
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color:#2d9cc2; 
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.block:hover {
+  background-color:#4CAF50;
   
+}
